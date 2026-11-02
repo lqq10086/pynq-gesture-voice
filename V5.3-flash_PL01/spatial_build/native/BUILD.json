@@ -1,0 +1,33 @@
+{
+  "source_sha256": "13c471e770ad44d74ed2aac1da049e0cc6983f719a674aaf8648e9f2edf41fb5",
+  "library_sha256": "8278bddf0b546f1277c92016e9c0ce4f6476feef4dd5919e082902fdbbc2c04d",
+  "abi": "0x52334402",
+  "features": 31,
+  "simd_instruction_count": 27,
+  "simd_instruction_examples": [
+    "1558:\tff4e 4d7a \tvmul.f32\tq10, q7, q13",
+    "155c:\tef60 4de4 \tvsub.f32\tq10, q8, q10",
+    "1568:\tef64 4de0 \tvsub.f32\tq10, q10, q8",
+    "1574:\tff44 4df0 \tvmul.f32\tq10, q10, q8",
+    "15ae:\tffea 89ca \tvmul.f32\tq12, q13, d10[0]",
+    "15c2:\tef40 0de8 \tvadd.f32\tq8, q8, q12",
+    "15ca:\tffe4 69cb \tvmul.f32\tq11, q10, d11[0]",
+    "15ce:\tef40 0de2 \tvadd.f32\tq8, q8, q9",
+    "15de:\tef40 0de6 \tvadd.f32\tq8, q8, q11",
+    "15ea:\tef60 2de2 \tvsub.f32\tq9, q8, q9",
+    "1696:\tef60 0de6 \tvsub.f32\tq8, q8, q11",
+    "17f0:\tffea 09c3 \tvmul.f32\tq8, q13, d3[0]"
+  ],
+  "compiler": "ARM gcc 11.2.0",
+  "flags": [
+    "-O3",
+    "-shared",
+    "-fPIC",
+    "-std=c11",
+    "-mcpu=cortex-a9",
+    "-mfpu=neon",
+    "-mfloat-abi=hard",
+    "-ffp-contract=off"
+  ],
+  "validation": "See reports/rotation15/native_test_console.txt for actually executed ARM checks"
+}

@@ -1,0 +1,3 @@
+`ifndef OV5640_COLOR_DELTA_COUNT
+`define OV5640_COLOR_DELTA_COUNT 0
+`endif

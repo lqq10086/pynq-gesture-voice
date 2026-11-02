@@ -1,0 +1,16 @@
+ROUTED_FULLY	1
+ERRORS_IN_ROUTES	0
+PARTIALLY_ROUTED	0
+setup_bad	0
+hold_bad	0
+drc_blocking	0
+locked_ips	0
+clock:clk_fpga_1	7.000
+clock:clk_fpga_0	10.000
+clock:clk50	20.000
+clock:cam_pclk	11.800
+clock:cam_clk_feedback	11.800
+clock:cam_pclk_shifted	11.800
+clock:clkfb	40.000
+clock:pix5_i	2.689
+clock:pix_i	13.445

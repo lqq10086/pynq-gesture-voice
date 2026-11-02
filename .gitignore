@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+V5.3-flash_PL01/reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/final_routed.dcp

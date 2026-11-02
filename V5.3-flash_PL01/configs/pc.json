@@ -1,0 +1,50 @@
+{
+  "already_mirrored": false,
+  "video_backend": "opencv",
+  "video": {
+    "source": "0",
+    "width": 1280,
+    "height": 720,
+    "fps": 30
+  },
+  "render_fps": 30,
+  "detection_interval_ms": 200,
+  "voice": {
+    "enabled": true,
+    "assets": "voice_assets",
+    "backend": "opencv",
+    "policy": "always",
+    "start_listening": true,
+    "minimum_confidence": 0.55,
+    "cooldown_ms": 900,
+    "max_audio_age_ms": 180,
+    "max_event_age_ms": 200,
+    "command_deadline_ms": 500,
+    "audio": {
+      "kind": "sounddevice",
+      "sample_rate": 16000,
+      "block_ms": 30,
+      "queue_blocks": 4,
+      "device": null
+    },
+    "number_action": "enter",
+    "command_confidence": {
+      "on": 0.45,
+      "off": 0.45,
+      "back": 0.2,
+      "two": 0.2
+    }
+  },
+  "inference": {
+    "backend": "opencv",
+    "model": "models/gesture_best.onnx",
+    "names": [
+      "open_palm",
+      "pinch_point"
+    ],
+    "confidence": 0.6,
+    "pinch_confidence": 0.45,
+    "iou": 0.45,
+    "threads": 4
+  }
+}

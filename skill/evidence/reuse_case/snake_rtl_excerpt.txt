@@ -1,0 +1,5 @@
+原始文件：Task4_pynq_snake.zip / Task4_pynq_snake/reports/rtl_result.log
+原始文件 SHA-256：38f9a520b8678eedb1f4eaee23c042d2d38c11a7eafee87d10280a8482c6b882
+
+仿真结果摘录：
+RTL_PASS checks=21 simulated_time_ms=985

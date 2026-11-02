@@ -1,0 +1,45 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Oct 26 17:07:43 2026
+| Host         : yiyu running 64-bit major release  (build 9200)
+| Command      : report_clock_interaction -delay_type min_max -file D:/Tools/work/V5.3-flash_PL01/reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/clock_interaction.rpt
+| Design       : system_top
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                                    WNS                            TNS Failing  TNS Total    WNS Path         WHS                            THS Failing  THS Total    WHS Path         Clock-Pair           Inter-Clock              
+From Clock        To Clock          Clock Edges  WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Clock Edges  WHS(ns)  THS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints              
+----------------  ----------------  -----------  -------  -------  -----------  -----------  ---------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  -----------------------  
+cam_pclk          cam_pclk_shifted  fall - rise     0.29     0.00            0           10             8.85  fall - rise     0.54     0.00            0           10            -2.95  Clean                Timed                    
+cam_pclk          clk50                                                      0            1                                                            0            1                   Ignored              Asynchronous Groups      
+cam_pclk          clk_fpga_0                                                 0            2                                                            0            2                   Ignored              False Path               
+cam_pclk_shifted  cam_pclk_shifted  rise - rise     3.36     0.00            0         4176            11.80  rise - rise     0.06     0.00            0         4176             0.00  Clean                Timed                    
+cam_pclk_shifted  clk_fpga_0        rise - rise     8.59     0.00            0          473            10.00                                           0          473                   Ignored              Max Delay Datapath Only  
+cam_pclk_shifted  clk_fpga_1        rise - rise    10.62     0.00            0           26            11.80                                           0           26                   Ignored              Max Delay Datapath Only  
+clk50             cam_pclk_shifted                                           0            4                                                            0            4                   Ignored              Asynchronous Groups      
+clk50             clk50             rise - rise     9.79     0.00            0         2857            20.00  rise - rise     0.12     0.00            0         2857             0.00  Clean                Timed                    
+clk50             clk_fpga_0        rise - rise     8.68     0.00            0          117            10.00                                           0          117                   Ignored              Max Delay Datapath Only  
+clk50             pix_i             rise - rise    39.41     0.00            0            3            40.33                                           0            3                   Ignored              Max Delay Datapath Only  
+clk_fpga_0        cam_pclk_shifted                                           0            3                                                            0            3                   Ignored              False Path               
+clk_fpga_0        clk50             rise - rise     8.53     0.00            0          137            10.00                                           0          137                   Ignored              Max Delay Datapath Only  
+clk_fpga_0        clk_fpga_0        rise - rise     0.24     0.00            0        59368            10.00  rise - rise     0.06     0.00            0        59368             0.00  Clean                Partial False Path       
+clk_fpga_0        clk_fpga_1                                                 0          143                                                            0          143                   Ignored              False Path               
+clk_fpga_0        pix_i                                                      0           96                                                            0           96                   Ignored              False Path               
+clk_fpga_1        cam_pclk_shifted  rise - rise     5.77     0.00            0            7             7.00                                           0            7                   Ignored              Max Delay Datapath Only  
+clk_fpga_1        clk_fpga_0        rise - rise     5.44     0.00            0          504             7.00                                           0          504                   Ignored              Max Delay Datapath Only  
+clk_fpga_1        clk_fpga_1        rise - rise     0.43     0.00            0        19476             7.00  rise - rise     0.05     0.00            0        19476             0.00  Clean                Partial False Path       
+clk_fpga_1        pix_i             rise - rise     5.98     0.00            0           96       Unexpanded                                           0           96                   Ignored              Max Delay Datapath Only  
+pix_i             clk50                                                      0            2                                                            0            2                   Ignored              False Path               
+pix_i             clk_fpga_0        rise - rise     8.77     0.00            0          124            10.00                                           0          124                   Ignored              Max Delay Datapath Only  
+pix_i             clk_fpga_1        rise - rise    12.21     0.00            0           14       Unexpanded                                           0           14                   Ignored              Max Delay Datapath Only  
+pix_i             pix_i             rise - rise     0.70     0.00            0         5731            13.45  rise - rise     0.06     0.00            0         5731             0.00  Clean                Timed                    
+
+

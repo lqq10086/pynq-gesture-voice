@@ -1,0 +1,27 @@
+{
+  "description": "两个项目使用的处理器系统配置文件及实际调用记录",
+  "sha256_equal": true,
+  "shared_sha256": "1c5d71cbda919256d857d4bfaffa822062a8a77a42129400c53f4974b4ddc9bc",
+  "sources": [
+    {
+      "archive": "Task4_pynq_snake.zip",
+      "relative_path": "Task4_pynq_snake/reference/ps_config_ax7020_official_2023_1.tcl",
+      "sha256": "1c5d71cbda919256d857d4bfaffa822062a8a77a42129400c53f4974b4ddc9bc",
+      "used_by": "Task4_pynq_snake/scripts/create_project.tcl",
+      "call_lines": [
+        "source [file join $root reference ps_config_ax7020_official_2023_1.tcl]",
+        "set_ps_config $ps"
+      ]
+    },
+    {
+      "archive": "v53_competition_complete_record.zip",
+      "relative_path": "v53_competition/src/v53_core/hardware_camera_only/scripts/ps_config_ax7020_official_2023_1.tcl",
+      "sha256": "1c5d71cbda919256d857d4bfaffa822062a8a77a42129400c53f4974b4ddc9bc",
+      "used_by": "v53_competition/src/v53_core/hardware_camera_only/hardware/bd/system_bd.tcl",
+      "call_lines": [
+        "source [file join $root_dir scripts ps_config_ax7020_official_2023_1.tcl]",
+        "set_ps_config $ps7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿# 生成的构建产物一律不入库，只保留脚本与报告
+build/out/
+build/work/
+*.jou
+*.log
+.Xil/
+*.runs/
+*.cache/
+*.hw/
+*.sim/
+*.dcp
+*.bit
+*.ltx
+__pycache__/
+*.pyc

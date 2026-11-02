@@ -1,0 +1,245 @@
+{
+  "schema": "pl01-hls-synthesis-qualification-v1",
+  "status": "HLS_RESOURCE_CLOCK_PASS_NOT_ROUTED_NOT_BOARD",
+  "top": "fastest_accel",
+  "part": "xc7z020-clg400-2",
+  "architecture": {
+    "output_lanes": 8,
+    "dense_spatial_lanes": 4,
+    "dense_MACs": 32,
+    "true_DW_channel_lanes": 8,
+    "shared_input_compute_requant_store": true,
+    "accumulator_bits": 48,
+    "bias_checked_before_narrowing": true
+  },
+  "source_sha256": {
+    "hls/fastest_accel.cpp": "b91dd3ad15984304ac242284138896fe414287a11b57340fdc460b6eb3dd0df0",
+    "hls/fastest_accel.h": "32b89726021ebe158db9d33c43cafbf554390ab8176103f8e1ae41f2d5f17512"
+  },
+  "clock_target_ns": 10.0,
+  "clock_uncertainty_ns": 2.7,
+  "estimated_clock_ns": 8.296,
+  "bare_target_pass": true,
+  "uncertainty_budget_pass": false,
+  "clock_status": "WARNING_REQUIRES_ROUTED_TIMING",
+  "resources": {
+    "DSP": 38,
+    "LUT": 35882,
+    "FF": 17806,
+    "BRAM_18K": 98
+  },
+  "video_reserved": {
+    "DSP": 15,
+    "BRAM_18K": 49,
+    "LUT": 11726,
+    "FF": 18575
+  },
+  "whole_design_estimate_without_new_interconnect": {
+    "DSP": 53,
+    "BRAM_18K": 147,
+    "LUT": 47608,
+    "FF": 36381
+  },
+  "loop_pipelines": {
+    "VITIS_LOOP_357_1": {
+      "requested_II": "1",
+      "achieved_II": 2,
+      "depth": 13
+    },
+    "VITIS_LOOP_362_2": {
+      "requested_II": "1",
+      "achieved_II": 1,
+      "depth": 2
+    },
+    "VITIS_LOOP_370_3": {
+      "requested_II": "1",
+      "achieved_II": 2,
+      "depth": 12
+    },
+    "VITIS_LOOP_380_4": {
+      "requested_II": "NA",
+      "achieved_II": 9,
+      "depth": 9
+    },
+    "LOAD_INPUT": {
+      "requested_II": "1",
+      "achieved_II": 1,
+      "depth": 5
+    },
+    "LOAD_WEIGHTS": {
+      "requested_II": "1",
+      "achieved_II": 1,
+      "depth": 3
+    },
+    "SHARED_MAC": {
+      "requested_II": "1",
+      "achieved_II": 1,
+      "depth": 12
+    },
+    "VITIS_LOOP_269_3": {
+      "requested_II": "NA",
+      "achieved_II": 1,
+      "depth": 2
+    },
+    "REQUANT": {
+      "requested_II": "1",
+      "achieved_II": 1,
+      "depth": 3
+    },
+    "STORE_PACKED": {
+      "requested_II": "1",
+      "achieved_II": 1,
+      "depth": 5
+    }
+  },
+  "artifacts": {
+    "csynth_report": {
+      "file": "hls/build_csim/solution1/syn/report/fastest_accel_csynth.rpt",
+      "sha256": "fbdcd254fa452b3e65bf1f3fc5b8db58cfd8b36364addfdfc2904185801aa799"
+    },
+    "csynth_xml": {
+      "file": "hls/build_csim/solution1/syn/report/fastest_accel_csynth.xml",
+      "sha256": "6e01db73c8e8f30939a0c63aff4ede914d2e3908b8df26d0b85892270ab37534"
+    },
+    "synthesis_log": {
+      "file": "reports/hls_synth.log",
+      "sha256": "37b2d4646c8cc5e3281cd13bf669251271bf73208ddf653d9451c4be12ff9ff7"
+    },
+    "export_log": {
+      "file": "reports/hls_export.log",
+      "sha256": "99590377f1ef1c6c68c7a050eb8142ec790c7e6fe70dfcac1e32abb272016fa2"
+    },
+    "exported_ip": {
+      "directory": "hls/build_csim/solution1/impl/ip",
+      "component_xml": {
+        "file": "hls/build_csim/solution1/impl/ip/component.xml",
+        "sha256": "4e2db8400cdaa5753c683257214c1e34ac495f02c936558053a5dbc82de718c4"
+      },
+      "rtl_sha256": {
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel.v": "4fd9b6f69783c4ed61fba3117ef2135eb081e5ccbcade5df176091e606f42678",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_bases_RAM_AUTO_1R1W.v": "28f26c7a6bb94a9b5ba0dc90280c1598d85bd9fc9bdbf16ecd072659e44697ea",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_biases_RAM_AUTO_1R1W.v": "2e18cf992218b1fc37fa9ad55bf137c74526c879cec755df61e2dd0028e1599e",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_consumer.v": "179369dcb1cdcdac0863a8498ecc9ece7e2453a3768500b3a9010846361f4b91",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_consumer_fastest_accel_ap_uint_64_const_ap_uint_64_const_long_long_const_int_rcU.v": "4b1fa13cfdb4ee8da5de381c3829de7751f09db082858a12c2533cdbc2812ade",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_consumer_Pipeline_REQUANT.v": "fccab149c3f5b6d49276f9be4489e462d4c44e1f9d6b58067cfe795b1e4c2bf1",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_consumer_Pipeline_STORE_PACKED.v": "87c610057559f15d0beb2038bbfaca242093513a928103bf65c80cd4bc96bfc1",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_consumer_Pipeline_VITIS_LOOP_269_3.v": "21a10e6f043a689f1d024eeae02022bed8618c0b69809cb282db965fa8bfca8d",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_control_s_axi.v": "d69634a067df678ab07d60ed176741a1e43142d3e72d4237810fff6338740409",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_fastest_accel_Pipeline_VITIS_LOOP_357_1.v": "ac771e9d9692bdf19910e100ffa6df8c17c83ecc73b083f8a5ed3a825b0f2294",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_fastest_accel_Pipeline_VITIS_LOOP_362_2.v": "97a6176f60f3b7c02edef71599b09514e9510195ebe7814893cfc33987452bdf",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_fastest_accel_Pipeline_VITIS_LOOP_370_3.v": "b11390137f62b62273d84003244fe6852efd811be11888d7d216f9ad879d1f29",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_fastest_accel_Pipeline_VITIS_LOOP_380_4.v": "52e4ec22d574424fcdcf8993c17582e6b16629b0e0a4891894bfe1b06f573fa7",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_fifo_w1536_d2_S.v": "06f1707059839ddd598399ce9621d834b22e99d07b11ce653c98821f79c94e4f",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_flow_control_loop_pipe_sequential_init.v": "e93fcac69e8f51e8d4668728cfcc8b1c4aa3a32600d65a6c2204521ee26926bf",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_frp_fifoout.v": "353ea2e00eb44ea92265b7e7977e6fce27ed544587256fa534ab4c1b4e9dc3c7",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_frp_pipeline_valid.v": "8bd75adefbd5f56d02c3ba6bb97061f08b51b3bc327c15b55c721b7f6150668f",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_gmem_m_axi.v": "7009de644feeaa7f183fa36f82b9fb6e801b922cf4c91b1762be04868328e71c",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_hls_deadlock_detection_unit.v": "a3e2291ac9162803b6d9a9548dd5b60a99af1a93421f9ec3732ab929822fe49f",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mac_muladd_10ns_10ns_22s_23_4_1.v": "67947e4b683a8c02f9f9c6721b589281c19377c41d3fa85bed98e7c8c4b6e997",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mac_muladd_16s_8s_48s_48_4_1.v": "35287c1181d5315e05395cc06abc71499e9e04d659ac5b9f96d7bd86f3326396",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_10ns_10ns_20_2_1.v": "8513428851b04b29b6634cf1f782f9ceedf72edbf1b14a5895e98c26e6599741",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_10ns_2ns_12_2_1.v": "cac9dff49d9298476f597bdd49d2ed8788572de0c9f135c72042df1f56b5f83a",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_10s_10s_10_1_1.v": "b39767e9c96783a5d2b62b853c764f198a08ae89e9634d6c0c5802c8dee115fa",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_11ns_10ns_21_1_1.v": "eadf3bf5665c51dfb271aaa5a521fdd61ff8f8b4f6a8ce08233e70de153311f7",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_11ns_9ns_20_1_1.v": "79d3af4495aa942728e92f049b09d5876fde4a18a383b8e9819b2970bd03e55a",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_12s_10ns_22_1_1.v": "f5f0f4e9a0a07da387bc820351ea3e32dec9cf0a70a17e2617af56170b64fb83",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_12s_10ns_22_2_1.v": "760d243ea3cc2fd107998a08202aef277bec84310b8729fc2201d3b59acc10aa",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_15s_9ns_15_2_1.v": "f33b84427d5007403e2a2fbe8e5a4dffb2b8176d955e6f330e494a98c30f0fae",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_20ns_9ns_29_1_1.v": "711890ec3c7876f061d3e73af6b6e268a1a453911b7ef52b25f5c8f3ef7d1d40",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_20ns_9ns_29_2_1.v": "2ebe0eeda665efa6317b71b51a1039a2760718b77332588dfe9cc7e71d77fe13",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_2ns_3ns_4_2_1.v": "e8f8551582f85dcfaf4b362c0aca8f27c825a2afefe11dc444958abf938fcb1d",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_3ns_3ns_6_2_1.v": "12574d131a03d9e7faa5ad2ad7301f54ea3c0b92dcf34c60aae9840c5ecb8578",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_6ns_9ns_14_2_1.v": "b77e68cbaf3b1c467320214efcfabc8dcbbb384beb979934a02265acafeab16f",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mul_9ns_5ns_14_2_1.v": "6b0a11a24bbd9d1262164c97b098217103ed979caf937dd0b3171ebda6236595",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mux_4_2_16_1_1.v": "dd76065b938857d0a112f97c22562088a953831b3960295f881c17ca3a0bfee3",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mux_4_2_48_1_1.v": "f26b95a8e831b7aeb950dd1010dae49c2a03128e541660f862603ae3c5f142f2",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mux_8_3_15_1_1.v": "2dd910dcf371a64044d24dd84f3fa90d3e5951f7ab7e20c4ab2b1546676257e5",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mux_8_3_16_1_1.v": "2986efee90c9e5c8893c509af18a950a445fab81fa9577f48c05b9deee3e334d",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mux_8_3_32_1_1.v": "bed682757ace26671e7a32a541f7778fc6650d14d3ee5c3674197492aa3e693f",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_mux_8_3_48_1_1.v": "8f39a42fa9ff397bd8650abc551bf9726201a59c917ec277eec378ce5a8a7384",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_pipeline.v": "03ecf83298b3ce5793f5fa9f5054aaf7848b7b7f36994f72ab062111917177b0",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_producer.v": "d886b42ace0441ad597209113f1872b9c4642e7174aac9882cffa7e36f279ebc",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_producer_cache_bases_RAM_AUTO_1R1W.v": "32ba1237e9a3d1cfa2dba4a7454b00cc777c54dc77acb06cdfb897bb5f4847d2",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_producer_fastest_accel_ap_uint_const_ap_uint_const_long_long_const_int_const_bkb.v": "b4ee15ecfc21e5f8138f5eb619cbb24cda3355d8e357521be492572dd897bffa",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_producer_fastest_accel_ap_uint_const_ap_uint_const_long_long_const_int_const_jbC.v": "1d9f8bb79a6ca594276cd8c03709b364256e998e130098a64c2addd5b6ba85bf",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_producer_Pipeline_LOAD_INPUT.v": "ddb3addd9a5f8a7a34ce69a86a709a93fbdc34f122fec3cee69ae778349a6b7e",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_producer_Pipeline_LOAD_WEIGHTS.v": "fae7105509a2c66b2751e885097a2592890a77cbf92d963beb00f0ac753093f9",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_producer_Pipeline_SHARED_MAC.v": "45fd582a1d5b9e357beb4cc18e98fa9f5daa8a2d17ceeb19e432e9bfdd8be1c7",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_sdiv_32ns_32ns_32_36_seq_1.v": "76b684a72ef6c1fac5e42c922fa3a01c85280d0b01bb313ded4f1c81bba87399",
+        "hls/build_csim/solution1/impl/ip/hdl/verilog/fastest_accel_sdiv_32ns_4ns_10_36_seq_1.v": "0ff6108d54ac35e935b26f8661b7b079defa16c519bcde37719cc75e40c0c228",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel.vhd": "87b3c2c0ca9b0d6777833f3f6466978f6233d30e9f36ac37c3965bdda7c0e8c8",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_bases_RAM_AUTO_1R1W.vhd": "d45250fec23a37ecb0bef506d08e25bf7162333f3382547634e5539a2ca7cbcc",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_biases_RAM_AUTO_1R1W.vhd": "47e4076fbf622c52a1580cb64e61acd11ac2644173962953e6c6bced7ae11bcd",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_consumer.vhd": "a50094d6734480fb3a178f94133c47182041c0d9409e670f98823bec39d66fde",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_consumer_fastest_accel_ap_uint_64_const_ap_uint_64_const_long_long_const_int_rcU.vhd": "ee8152db6153c516b60b2ba9541ed6e673f8bdbf62f5dc91b3d7094e8ba2afc5",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_consumer_Pipeline_REQUANT.vhd": "b27c64476840011e48fa268b784fb9d3f3bc1c1544d939a8c3385ec68a7ed1e6",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_consumer_Pipeline_STORE_PACKED.vhd": "a34fe228aaefcc294dcd7aae26599e3c6c358d8edde692644d95224bb193344b",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_consumer_Pipeline_VITIS_LOOP_269_3.vhd": "e93b7d45803658b69c1805fe33a7f71a97587da8dd3f100b552601389abfd6da",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_control_s_axi.vhd": "3a5da96ff7e416bb9af476f39895cf8b383010051e69d0dd6848ecbae6b3794d",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_fastest_accel_Pipeline_VITIS_LOOP_357_1.vhd": "592828f7e4585f7cd54f1353ffade27e693de1a73003ab0406fcfe742910f3d9",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_fastest_accel_Pipeline_VITIS_LOOP_362_2.vhd": "a6778931d41faf6de291f8a14351ab207002241d8a3b9c55c58feb8561d6f065",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_fastest_accel_Pipeline_VITIS_LOOP_370_3.vhd": "8644a21794fa2ee754ff1aff22879ad2350a8a81994dfb80440c62ad6301b49a",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_fastest_accel_Pipeline_VITIS_LOOP_380_4.vhd": "80313e606b773336870455867b11ca150766234745b1acb72a9ae8052866a00f",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_fifo_w1536_d2_S.vhd": "1caca59c1bb35021a67ece7d914fecf2ed5822c187089fe84a4e4a26633b6051",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_flow_control_loop_pipe_sequential_init.vhd": "c18dc84499ec80ea69c90e81798fc0ece33fb47f1e11de98f566349bf6379147",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_frp_fifoout.vhd": "50b9d57d1f12a263c907c9c32ca47c8957c3d2173b923a9a1271665a078f4b7e",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_frp_pipeline_valid.vhd": "ec5b11826e0a906de23dea5aa6e7d37e4a68806d1d350a6d95af5b84293774d2",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_gmem_m_axi.vhd": "8be37b00d7cae56720231d470282b3c4eae150377b857043e83227901bbc2d1a",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mac_muladd_10ns_10ns_22s_23_4_1.vhd": "0bec5d30c50cea1f88ebb610b5682fbd66a05f688d8bd2a724ee5ce8161241c3",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mac_muladd_16s_8s_48s_48_4_1.vhd": "9bdbf3ba20e4921f22cef04d3752adae637de02774356e1e2fd45a4670840ab2",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_10ns_10ns_20_2_1.vhd": "e4ba2161af3faa049d6283a1cb37c9d81b3fc31203e2566f4da3f6ed0feb8cf2",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_10ns_2ns_12_2_1.vhd": "efe400c9fba2b73c0c1ac9b1520a66ac286fc106c60aa04ea69f8f16dc119755",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_10s_10s_10_1_1.vhd": "ce4337f71f8d54fdbdd6630fe9fa142bcce38cb005ccfbe437ba7b9685ba6c7a",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_11ns_10ns_21_1_1.vhd": "9b6f0784870552b71fbc7bd691ac7f99aea0da1c176bf8ed4843cf2eaf86ea0a",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_11ns_9ns_20_1_1.vhd": "ebe6800e5c0aa4076bb64e6cb542db39af7b9d25c77d831f98cbbf178f9d963c",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_12s_10ns_22_1_1.vhd": "22f83b8cb4475c9d4f98f3ec614c10d275d04f070136cc00ee9d6c64d77021f7",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_12s_10ns_22_2_1.vhd": "869e70b7f05a5a1806f032753421862e55abe1ebd9060edf74099fb05cb61d72",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_15s_9ns_15_2_1.vhd": "d0f5bddcfbd7827f0860e0cccc3ad955a822a1fc68ae4ebc4dbe5db3ec66a920",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_20ns_9ns_29_1_1.vhd": "6cb7bab5477c980950feffc0e004c1b3e7bd7f4fc4b8a8c740112c00dbef213c",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_20ns_9ns_29_2_1.vhd": "27b0853825bc650c830566859e05b548a4a14e78ec1c5d6adfc76e772b909fdb",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_2ns_3ns_4_2_1.vhd": "4b077caeaba3447ccf0c2137d6c8e7539a77a230d024e2d8a958b9b4a87fad40",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_3ns_3ns_6_2_1.vhd": "9c115f3f8002d85fa8a04b72bcdaf68e0005b938f28d6f29d06153c60bcfff7d",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_6ns_9ns_14_2_1.vhd": "b16a6c4d680ee344879f2f6225441f0b0b7f6d0ca43b07ac92640934c3c5a5ef",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mul_9ns_5ns_14_2_1.vhd": "7b63eea56b6b7b487cb15fd06036489ec8c3e09967c74a27a18e0dfccdb0cb1c",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mux_4_2_16_1_1.vhd": "dbbf10eb6a2239679d276d495bc9616c48289ec1fb8eb8d9c23e59d3a387be7e",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mux_4_2_48_1_1.vhd": "9585ee3ee78b1f53c336e69a7f472e471df562095da7db36f43168bb0447e5e3",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mux_8_3_15_1_1.vhd": "9ef552f584896654c3758e6c4ae89149abcc5ef3fa20d91b18faa586e0022fed",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mux_8_3_16_1_1.vhd": "f027b82aa7f076d92c9d2fcbd6e8b1ebfd17baf9fac97617b0399cf4b436728e",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mux_8_3_32_1_1.vhd": "7d69a893cb368b884bb2cdcba647b4a9922ce83a1d7844b3ff2a77e79b870e45",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_mux_8_3_48_1_1.vhd": "8aaca0f3d53e3affc0148ffa262eac60816d6e143199cfb4f10d84f02c1dffa9",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_pipeline.vhd": "9dab8a9c55be5b985a7cdc180036d17d2ae282b182f57e96fdfe17ddd12312f6",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_producer.vhd": "aa5c913f087d0ef3ea507bd8228146c861bdaf87cf0ebee94342e9e8fd1b2c66",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_producer_cache_bases_RAM_AUTO_1R1W.vhd": "b1c680c04bd7a95b04704cfc92057d7f26d62fdd5c36ffc613c31fb2601e3abc",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_producer_fastest_accel_ap_uint_const_ap_uint_const_long_long_const_int_const_bkb.vhd": "07bd9a37fa5fcff3e0082ccaf52eada13070e331a6138abdc80448227fd8eb9c",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_producer_fastest_accel_ap_uint_const_ap_uint_const_long_long_const_int_const_jbC.vhd": "feaab187476d2d54010fc7068ab8006419db0f051ea2cd2d7e7ecc99a1f5a2af",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_producer_Pipeline_LOAD_INPUT.vhd": "ce943c1439afccd9c517e8cfe4b9b0b22c3a5cc681fe1a88eb5de2ee55198240",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_producer_Pipeline_LOAD_WEIGHTS.vhd": "6c03164706ea98ab96ff1cce73d65f41bc4562fd3c501b925cd5d99a7d291f2a",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_producer_Pipeline_SHARED_MAC.vhd": "90fdab9dcbf077d9a97515c2b55d3532b2136e6282461c7134ca908738543c1d",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_sdiv_32ns_32ns_32_36_seq_1.vhd": "237f26ccd3d05e976599522441ad7cb3078f7ca859d6b5f50b5a99d242d8394d",
+        "hls/build_csim/solution1/impl/ip/hdl/vhdl/fastest_accel_sdiv_32ns_4ns_10_36_seq_1.vhd": "446cc792d2059faac1ad76805e98c0cadc0acf3e85066a57973290a0eb1e1ffb"
+      }
+    }
+  },
+  "csim": {
+    "status": "PASS",
+    "full96_plan": true,
+    "report": {
+      "file": "reports/hls_full96_csim_summary.json",
+      "sha256": "a75062a60f32074ff6ed24a578b033df87cc7be6df0ca0c0b1a5f0db7de318a6"
+    }
+  },
+  "interfaces": [
+    "s_axi_control",
+    "ap_clk",
+    "ap_rst_n",
+    "interrupt",
+    "m_axi_gmem",
+    "phase"
+  ],
+  "phase_ports": [
+    "phase"
+  ],
+  "latency_status": "NOT_MEASURED",
+  "routed_timing_status": "NOT_RUN",
+  "board_status": "NOT_RUN"
+}

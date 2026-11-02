@@ -1,0 +1,49 @@
+{
+  "status": "MODIFIED_NOT_OFFICIAL_SIGNATURE_VALIDATED",
+  "purpose": "9 unrelated speaker-test WAV samples removed; other regular files verified byte-identical",
+  "sanitized_tar_sha256": "b83e48e12cb70edc6f988b43091193821ed91dcf335cde5c517923d838f0e7ca",
+  "removed_paths": [
+    "alsa-utils-1.2.6/speaker-test/samples/Front_Center.wav",
+    "alsa-utils-1.2.6/speaker-test/samples/Front_Left.wav",
+    "alsa-utils-1.2.6/speaker-test/samples/Side_Right.wav",
+    "alsa-utils-1.2.6/speaker-test/samples/Rear_Center.wav",
+    "alsa-utils-1.2.6/speaker-test/samples/Rear_Right.wav",
+    "alsa-utils-1.2.6/speaker-test/samples/Rear_Left.wav",
+    "alsa-utils-1.2.6/speaker-test/samples/Front_Right.wav",
+    "alsa-utils-1.2.6/speaker-test/samples/Noise.wav",
+    "alsa-utils-1.2.6/speaker-test/samples/Side_Left.wav"
+  ],
+  "official_original_artifacts": {
+    "licenses/linux-COPYING.txt": {
+      "url": "https://raw.githubusercontent.com/Xilinx/linux-xlnx/3af4295e00efdced3e8c6973606a7de55f6bf7dc/COPYING",
+      "sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0",
+      "bytes": 496
+    },
+    "licenses/linux-GPL-2.0.txt": {
+      "url": "https://raw.githubusercontent.com/Xilinx/linux-xlnx/3af4295e00efdced3e8c6973606a7de55f6bf7dc/LICENSES/preferred/GPL-2.0",
+      "sha256": "f6b78c087c3ebdf0f3c13415070dd480a3f35d8fc76f3d02180a407c1c812f79",
+      "bytes": 18729
+    },
+    "alsa_source/alsa-utils_1.2.6-1ubuntu1.dsc": {
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/a/alsa-utils/alsa-utils_1.2.6-1ubuntu1.dsc",
+      "sha256": "eab53ebeec88f8f851ea7045c652108b8214e0d277c4a93cdc5c7843a5052a51",
+      "bytes": 2613
+    },
+    "alsa_source/alsa-utils_1.2.6.orig.tar.bz2": {
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/a/alsa-utils/alsa-utils_1.2.6.orig.tar.bz2",
+      "sha256": "6a1efd8a1f1d9d38e489633eaec1fffa5c315663b316cab804be486887e6145d",
+      "bytes": 1334063
+    },
+    "alsa_source/alsa-utils_1.2.6.orig.tar.bz2.asc": {
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/a/alsa-utils/alsa-utils_1.2.6.orig.tar.bz2.asc",
+      "sha256": "2efbe44243676d6b3eafcd7a425c2d92d2bb09ef8b605f5ed8396727be187204",
+      "bytes": 833
+    },
+    "alsa_source/alsa-utils_1.2.6-1ubuntu1.debian.tar.xz": {
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/a/alsa-utils/alsa-utils_1.2.6-1ubuntu1.debian.tar.xz",
+      "sha256": "26f52461fb3bb9491b34e97cd6c9e3f1e5eed1503c5a94a5f3ef97d8656330c9",
+      "bytes": 33048
+    }
+  },
+  "gpl_corresponding_source_status": "UNVERIFIED_PUBLIC_RELEASE_BLOCKER"
+}

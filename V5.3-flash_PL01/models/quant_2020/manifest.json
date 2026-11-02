@@ -1,0 +1,19 @@
+{
+  "status": "SANITIZED_RUNTIME_IDENTITY_ONLY_NOT_BOARD_QUALIFIED",
+  "model_sha256": "e210ef35bdd9ea8e6f622cda6eba92ef5ef4b2d80371bdc204d39914d23bb394",
+  "source_package_manifest_sha256": "134c346dda92624316901046c802e1737461a34a0734fb9c9fde215df114a289",
+  "files": {
+    "weights_padded.bin": {
+      "bytes": 240264,
+      "sha256": "ebfb3f7599010a1485733d88cce5bb1000bc07055dd523cea9d3afdd81a737dc"
+    },
+    "bias.bin": {
+      "bytes": 34256,
+      "sha256": "b501fd7d5d9f5d9af7dea5dd9de4e31ee9a99927d473482f1ac31867cdecb6bb"
+    },
+    "shift.bin": {
+      "bytes": 17128,
+      "sha256": "ba962ed144cd79f857dec3160ef9ce783cbe61332233b5e1c40766b494460db4"
+    }
+  }
+}

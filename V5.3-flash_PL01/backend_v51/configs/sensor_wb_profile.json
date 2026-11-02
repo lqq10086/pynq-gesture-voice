@@ -1,0 +1,18 @@
+{
+  "status": "ACCEPTED_PARAMETERS_REBOUND_CAMERA_ONLY",
+  "mode": "manual",
+  "controls": {
+    "5001": 1,
+    "5196": 0,
+    "3406": 1
+  },
+  "gains": [
+    1460,
+    1024,
+    1796
+  ],
+  "bitstream_sha256": "4f65cb62178d2d384416db45c7b02e2c89878e8b575ab851cbabc216e59325c6",
+  "hwh_sha256": "37b819761b89828729e9208f688f0bd75369b27545658621ebfe32afe8c39cc6",
+  "qualification_sha256": "4902b49070cbe7515491f4592e26656013070e4aa3ca2ef63374e3548c8e744f",
+  "physical_new_hardware_acceptance": "PENDING_LIVE_SENSOR_READBACK"
+}

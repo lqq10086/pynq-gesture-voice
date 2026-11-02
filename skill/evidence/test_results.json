@@ -1,0 +1,9 @@
+{
+  "tests": 156,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "measured_on": "computer automated functional tests; not physical FPGA board",
+  "created_at": "2026-10-25T04:06:53.699163+00:00"
+}

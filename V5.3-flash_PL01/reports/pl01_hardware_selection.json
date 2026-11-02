@@ -1,0 +1,24 @@
+{
+  "schema": "pl01-hardware-selection-v1",
+  "status": "ROUTED_HARDWARE_SELECTED_NOT_BOARD",
+  "build_result": {
+    "file": "reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/build_result.json",
+    "sha256": "3094ef4ea95ab9621049618308ac0f0919f2890a21c75ba89718868a80985c49"
+  },
+  "bitstream": {
+    "file": "reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/flash_pl01.bit",
+    "sha256": "7c6de24f663c9dd94ad1e51ff05382cc53fcfa773327f6c4dd052a08dcc8ce75"
+  },
+  "hwh": {
+    "file": "reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/flash_pl01.hwh",
+    "sha256": "d6ef66b5102eec3dc2942ebe8b9e629d3db0639ea4a10bbd19559298e9e4ba2c"
+  },
+  "dcp": {
+    "file": "reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/final_routed.dcp",
+    "sha256": "8ffa9bda91d1fcc2bd83740546bad00b180237bee3be1a8472df3f82862b3c81"
+  },
+  "hls_qualification": {
+    "file": "reports/hls_synthesis_qualification.json",
+    "sha256": "3ad9bf73a38dcb40f2b67152f61b455a6ec6d4d149bf79371ba38c941027e39d"
+  }
+}

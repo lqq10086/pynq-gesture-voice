@@ -1,0 +1,13 @@
+{
+  "name": "probe_metadata",
+  "argv": [
+    "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "-B",
+    "C:\\Users\\user\\.codex\\skills\\pynq-overlay-workflow\\scripts\\probe_overlay.py",
+    "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101\\overlay-contract.json"
+  ],
+  "cwd": "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101",
+  "returncode": 2,
+  "stdout": "{\"status\": \"NOT_RUN\", \"reason\": \"PYNQ unavailable in this interpreter\", \"detail\": \"No module named 'pynq'\", \"scope\": \"board_probe\"}\n",
+  "stderr": ""
+}

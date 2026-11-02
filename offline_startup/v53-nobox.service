@@ -1,0 +1,25 @@
+[Unit]
+Description=Local application startup after safe ownership handoff
+After=local-fs.target clear_pl_statefile.service
+RequiresMountsFor=/home /opt/gesture-voice
+StartLimitIntervalSec=300
+StartLimitBurst=1
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/
+EnvironmentFile=-/etc/default/gesture-voice
+Environment=PYTHONUNBUFFERED=1
+Environment=XILINX_XRT=/usr
+ExecStart=/usr/local/share/pynq-venv/bin/python3 -B /opt/gesture-voice/bridge.py
+KillMode=control-group
+KillSignal=SIGTERM
+SendSIGKILL=no
+TimeoutStopSec=120
+Restart=no
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

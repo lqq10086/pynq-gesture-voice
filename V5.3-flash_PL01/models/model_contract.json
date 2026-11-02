@@ -1,0 +1,115 @@
+{
+  "architecture": "YOLO-FastestV2",
+  "source_repository": "https://github.com/dog-qiuqiu/Yolo-FastestV2",
+  "source_commit": "ac2a5e3060bff76dd1e45f9b921dd77bfbeb194d",
+  "nc": 2,
+  "classes": [
+    "open_palm",
+    "pinch_point"
+  ],
+  "input_name": "images",
+  "input_shape": [
+    1,
+    3,
+    384,
+    384
+  ],
+  "input_dtype": "float32",
+  "input_channels": "BGR",
+  "output_names": [
+    "head_s16",
+    "head_s32"
+  ],
+  "output_shapes": [
+    [
+      1,
+      24,
+      24,
+      17
+    ],
+    [
+      1,
+      12,
+      12,
+      17
+    ]
+  ],
+  "output_layout": "NHWC",
+  "output_dtype": "float32",
+  "strides": [
+    16,
+    32
+  ],
+  "anchors": [
+    [
+      12.640000343322754,
+      19.389999389648438
+    ],
+    [
+      37.880001068115234,
+      51.47999954223633
+    ],
+    [
+      55.709999084472656,
+      138.30999755859375
+    ],
+    [
+      126.91000366210938,
+      78.2300033569336
+    ],
+    [
+      131.57000732421875,
+      214.5500030517578
+    ],
+    [
+      279.9200134277344,
+      258.8699951171875
+    ]
+  ],
+  "head_channels": "12 sigmoid regression (anchor,xywh),3 sigmoid objectness,2 shared softmax class probabilities",
+  "opset": 11,
+  "parameter_count": 237401,
+  "input_size": 384,
+  "model_names": [
+    "open_palm",
+    "pinch_point"
+  ],
+  "enabled_gestures": [
+    "open_palm",
+    "pinch_point"
+  ],
+  "input_bytes": 1769472,
+  "output_shape": [
+    1,
+    2160,
+    7
+  ],
+  "output_bytes": 60480,
+  "output_columns": [
+    "cx",
+    "cy",
+    "w",
+    "h",
+    "objectness",
+    "open_palm",
+    "pinch_point"
+  ],
+  "output_decoded": true,
+  "onnx_outputs_decoded": false,
+  "NMS_in_model": false,
+  "preprocess": "camera raw565: exactly one mirror + retained integer CCM/gamma; native Fastest BGR INTER_LINEAR stretch384; NCHW FP32 /255",
+  "restore_policy": "stretch",
+  "confidence": 0.6,
+  "pinch_confidence": 0.45,
+  "iou": 0.45,
+  "decoder": "fastest_numpy.py:decode_heads; heads already contain regression/objectness sigmoid and shared class softmax",
+  "decoded_row_order": "stride16,32; each branch anchor,y,x",
+  "model_files": {
+    "gesture_best.onnx": "e210ef35bdd9ea8e6f622cda6eba92ef5ef4b2d80371bdc204d39914d23bb394"
+  },
+  "board_verified": false,
+  "FPGA_acceleration_tested": false,
+  "pl_nn_acceleration": true,
+  "INT8_tested": false,
+  "execution_backend": "PL_FASTEST_W8PC_A16_EXPERIMENTAL"
+}

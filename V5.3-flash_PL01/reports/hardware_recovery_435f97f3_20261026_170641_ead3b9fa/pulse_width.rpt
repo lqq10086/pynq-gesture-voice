@@ -1,0 +1,14 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Oct 26 17:07:30 2026
+| Host         : yiyu running 64-bit major release  (build 9200)
+| Command      : report_pulse_width -all_violators -warn_on_violation -file D:/Tools/work/V5.3-flash_PL01/reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/pulse_width.rpt
+| Design       : system_top
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pulse Width Report
+

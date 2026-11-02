@@ -1,0 +1,68 @@
+{
+  "already_mirrored": false,
+  "video_backend": "plugin",
+  "video_factory": "hardware_driver:create_video",
+  "video_options": {
+    "width": 1280,
+    "height": 720
+  },
+  "write_video": true,
+  "render_fps": 30,
+  "detection_interval_ms": 200,
+  "voice": {
+    "enabled": true,
+    "assets": "voice_assets",
+    "backend": "opencv",
+    "policy": "gated",
+    "start_listening": true,
+    "minimum_confidence": 0.55,
+    "cooldown_ms": 900,
+    "max_audio_age_ms": 180,
+    "max_event_age_ms": 200,
+    "command_deadline_ms": 500,
+    "audio": {
+      "kind": "alsa",
+      "device": "default",
+      "sample_rate": 16000,
+      "block_ms": 30,
+      "queue_blocks": 4
+    },
+    "number_action": "enter",
+    "command_confidence": {
+      "on": 0.45,
+      "off": 0.45,
+      "back": 0.2,
+      "two": 0.2
+    }
+  },
+  "inference": {
+    "backend": "plugin",
+    "factory": "hardware_driver:create_runner",
+    "names": [
+      "open_palm",
+      "pinch_point"
+    ],
+    "confidence": 0.6,
+    "pinch_confidence": 0.45,
+    "iou": 0.45,
+    "restore_policy": "yolov5",
+    "options": {
+      "contract_file": "models/model_contract.json",
+      "input_shape": [
+        1,
+        3,
+        384,
+        384
+      ],
+      "output_shape": [
+        1,
+        9072,
+        7
+      ]
+    }
+  },
+  "video_output_mode": "synchronous",
+  "ui_effects": {
+    "glass_mode": "tint"
+  }
+}

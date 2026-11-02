@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "width": 7,
+  "height": 7,
+  "coordinates": "x-left-to-right,y-bottom-to-top; cropped rows-top-to-bottom",
+  "matching": "full-occupancy-bounding-box-translation-only",
+  "templates": [
+    {"key":"tree","shape_variant":"A","title":"树","count":11,"rows":["..#..",".###.","#####","..#..","..#.."]},
+    {"key":"tree","shape_variant":"B","title":"树","count":12,"rows":["..#..",".###.","#####","..#..","..#..","..#.."]},
+    {"key":"car","shape_variant":"A","title":"车辆","count":10,"rows":[".###.","#####","#...#"]},
+    {"key":"car","shape_variant":"B","title":"车辆","count":12,"rows":[".####.","######",".#..#."]},
+    {"key":"house","shape_variant":"A","title":"房子","count":10,"rows":[".##.","####",".##.",".##."]},
+    {"key":"house","shape_variant":"B","title":"房子","count":15,"rows":["..#..",".###.","#####",".###.",".###."]},
+    {"key":"cloud","shape_variant":"A","title":"云朵","count":6,"rows":[".##.","####"]},
+    {"key":"cloud","shape_variant":"B","title":"云朵","count":8,"rows":[".###.","#####"]}
+  ]
+}

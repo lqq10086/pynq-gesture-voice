@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ架构与Overlay集成"
+  short_description: "跨项目复用PYNQ的PS与PL分工、Overlay校验、寄存器访问和分层验证流程"
+  default_prompt: "使用 $pynq-overlay-workflow 将现有 PYNQ 环境迁移到新应用，完成接口适配、实现和分层验证。"

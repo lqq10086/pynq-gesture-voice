@@ -1,0 +1,36 @@
+# Local runtime data and private recordings
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.log
+*.wav
+*.npz
+!voice_assets/norm_stats_en8.npz
+!backend_v51/voice_assets/norm_stats_en8.npz
+**/known_hosts
+*.pem
+*.key
+.env
+.env.*
+
+# Retain only the hardware and integrity records required by this runtime.
+/reports/*
+!/reports/camera_reference/
+!/reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/
+!/reports/physical_bundle_2402/
+!/reports/pl01_cache_sources/
+!/reports/camera_dual_qualification.json
+!/reports/hls_full96_csim_summary.json
+!/reports/hls_synthesis_qualification.json
+!/reports/pl01_cache_measurements_1790203001252572638_35c8ad9e.json
+!/reports/pl01_cache_proof.json
+!/reports/pl01_hardware_selection.json
+
+# Local drawings, captured frames, and datasets
+/works/
+/captures/
+/datasets/
+/training/
+work.json

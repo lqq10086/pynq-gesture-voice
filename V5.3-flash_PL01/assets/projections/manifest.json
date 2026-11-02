@@ -1,0 +1,569 @@
+{
+  "schema": 1,
+  "generated_from": "spatial_build.model.LEVELS.coords",
+  "world": {
+    "width": 5,
+    "depth": 4,
+    "height": 5
+  },
+  "cell_px": 64,
+  "directions": {
+    "front": "mask[z][x], bottom-first z; view from y<0 toward +y",
+    "left": "mask[z][column], bottom-first z; column 0 is y=depth-1",
+    "top": "mask[y][x]; row 0 is y=0, no additional mirroring"
+  },
+  "levels": {
+    "intro": {
+      "name": "入门",
+      "coords": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "coords_sha256": "dd1b6fa62c8dfbdf730e9fcf18338474fac56d6441825014734698855228e0b4",
+      "views": {
+        "front": {
+          "file": "intro_front.png",
+          "mask": [
+            [
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "44a793ab345727bc79dcda0ab944bb24e45b267a8fe86e49db9bb58961357142",
+          "pixel_shape": [
+            321,
+            321,
+            4
+          ]
+        },
+        "left": {
+          "file": "intro_left.png",
+          "mask": [
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "709a7618013bb614e4c97cdc4764afc106ed01ef11d4857b05393b6b050fa4e4",
+          "pixel_shape": [
+            321,
+            257,
+            4
+          ]
+        },
+        "top": {
+          "file": "intro_top.png",
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "f294c50f995aa7fbd179f2622a5909937b45c8b908cf8fbd2aa04efd90fc7648",
+          "pixel_shape": [
+            257,
+            321,
+            4
+          ]
+        }
+      }
+    },
+    "steps": {
+      "name": "阶梯",
+      "coords": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ]
+      ],
+      "coords_sha256": "7b2957f169dc8069700aae2a09ae3f711514aa99c1762cbb3d913096c323446d",
+      "views": {
+        "front": {
+          "file": "steps_front.png",
+          "mask": [
+            [
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "16cd83db88fdf12b496dbb3f1d970c8ea9cd87a72eb40ee7c75dfbffc097f361",
+          "pixel_shape": [
+            321,
+            321,
+            4
+          ]
+        },
+        "left": {
+          "file": "steps_left.png",
+          "mask": [
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "f5dcd16a00229cc9d6ff4c8a75c5753511e484997c5d70ffe8ecd4a058d3fa47",
+          "pixel_shape": [
+            321,
+            257,
+            4
+          ]
+        },
+        "top": {
+          "file": "steps_top.png",
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "da1615000e6f62b9ead02fbb26f07c194d37907c12fdcf76f2c8e78b50791d45",
+          "pixel_shape": [
+            257,
+            321,
+            4
+          ]
+        }
+      }
+    },
+    "notch": {
+      "name": "错层",
+      "coords": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          4,
+          2,
+          0
+        ],
+        [
+          4,
+          2,
+          1
+        ]
+      ],
+      "coords_sha256": "e5fc19994ef4957d51d5896a179a34a8ff9062d87c92722131f9b267c40adcda",
+      "views": {
+        "front": {
+          "file": "notch_front.png",
+          "mask": [
+            [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              false,
+              true,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "632900a30b31b56775a9f12e1dfb6d3a185c4d3d0978d763ae6284fd12d48519",
+          "pixel_shape": [
+            321,
+            321,
+            4
+          ]
+        },
+        "left": {
+          "file": "notch_left.png",
+          "mask": [
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "f5dcd16a00229cc9d6ff4c8a75c5753511e484997c5d70ffe8ecd4a058d3fa47",
+          "pixel_shape": [
+            321,
+            257,
+            4
+          ]
+        },
+        "top": {
+          "file": "notch_top.png",
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              false,
+              true,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "image_sha256": "2daf2f0fbbe0b81d3996bcb455b90d24c54e37126a8347e86d42a8bdc78d3660",
+          "pixel_shape": [
+            257,
+            321,
+            4
+          ]
+        }
+      }
+    }
+  }
+}

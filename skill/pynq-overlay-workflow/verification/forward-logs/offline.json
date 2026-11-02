@@ -1,0 +1,13 @@
+{
+  "name": "offline",
+  "argv": [
+    "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "-B",
+    "C:\\Users\\user\\.codex\\skills\\pynq-overlay-workflow\\scripts\\check_overlay.py",
+    "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101\\overlay-contract.json"
+  ],
+  "cwd": "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101",
+  "returncode": 0,
+  "stdout": "{\"status\": \"PASS\", \"scope\": \"offline_contract_and_files_only\", \"target\": \"temperature-logger-Zynq-UltraScale+-exact-board-unconfirmed-SYNTHETIC-DO-NOT-LOAD\", \"build_id\": \"synthetic-forward-1\", \"hashes\": {\"bit\": \"0b4340601d837d945cb1203d9a4e44323be958476a831dc72b502f134863a331\", \"hwh\": \"7daf0f282c6d511113aa396a59a3520356027d02995082355475e35f02e46e12\"}, \"ip_count\": 1, \"safe_read_count\": 1, \"board_test\": \"NOT_RUN\"}\n",
+  "stderr": ""
+}

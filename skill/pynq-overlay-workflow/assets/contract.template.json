@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "target_label": "fill-current-board-and-design",
+  "build_id": "fill-build-id-from-artifact-producer",
+  "overlay": {
+    "bit": "overlay/design.bit",
+    "hwh": "overlay/design.hwh",
+    "bit_sha256": null,
+    "hwh_sha256": null
+  },
+  "ips": [
+    {
+      "name": "fill-ip-full-name-from-hwh",
+      "type": "fill-vlnv-from-hwh",
+      "phys_addr": null,
+      "addr_range": null,
+      "evidence": "fill-source-path-and-section-or-line",
+      "safe_reads": []
+    }
+  ]
+}

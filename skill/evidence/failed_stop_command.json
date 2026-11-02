@@ -1,0 +1,5 @@
+{
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/xilinx/jupyter_notebooks/V5.3-flash/stop_board.py\", line 104, in <module>\n    stop(args.output,args.timeout)\n  File \"/home/xilinx/jupyter_notebooks/V5.3-flash/stop_board.py\", line 93, in stop\n    result = wait_for_stop(record,timeout)\n  File \"/home/xilinx/jupyter_notebooks/V5.3-flash/stop_board.py\", line 80, in wait_for_stop\n    raise RuntimeError('Stop pending: shutdown/QUIESCENT proof incomplete; owner retained, no force kill')\nRuntimeError: Stop pending: shutdown/QUIESCENT proof incomplete; owner retained, no force kill\n"
+}

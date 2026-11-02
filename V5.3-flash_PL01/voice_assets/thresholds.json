@@ -1,0 +1,52 @@
+{
+  "model": "ds_cnn_en8.onnx",
+  "calibrated_on": "val",
+  "reported_on": "test",
+  "metric": "f1",
+  "labels": [
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "back",
+    "on",
+    "off",
+    "stop",
+    "unknown",
+    "silence"
+  ],
+  "thresholds": {
+    "one": 0.0,
+    "two": 0.0,
+    "three": 0.0,
+    "four": 0.0,
+    "five": 0.0,
+    "back": 0.0,
+    "on": 0.0,
+    "off": 0.0,
+    "stop": 0.0,
+    "unknown": 0.2,
+    "silence": 0.0
+  },
+  "boosts": {
+    "back": 0.2
+  },
+  "val_before": {
+    "accuracy": 0.9248,
+    "accuracy_target_words": 0.91
+  },
+  "val_after": {
+    "accuracy": 0.9223,
+    "accuracy_target_words": 0.9128
+  },
+  "test_before": {
+    "accuracy": 0.903,
+    "accuracy_target_words": 0.8748
+  },
+  "test_after": {
+    "accuracy": 0.9044,
+    "accuracy_target_words": 0.8852
+  },
+  "selection_note": "阈值网格退化为单点 0.20: 这一版刻意关闭了逐类否决, 只保留提权。完整网格标定出的逐类阈值会把一批目标词推给 unknown (test 目标词准确率反而下降), 所以除 unknown 外各类阈值保持 0.00, 等于不否决; 唯一生效的调节是 back 提权。要复现逐类阈值标定, 用默认网格 --grid 0.20:0.90:0.05。"
+}

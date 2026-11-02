@@ -1,0 +1,481 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Oct 26 17:07:35 2026
+| Host         : yiyu running 64-bit major release  (build 9200)
+| Command      : report_drc -file D:/Tools/work/V5.3-flash_PL01/reports/hardware_recovery_435f97f3_20261026_170641_ead3b9fa/drc.rpt
+| Design       : system_top
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_system_top_routed
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 83
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining           | 35         |
+| DPOP-1    | Warning  | PREG Output pipelining     | 8          |
+| DPOP-2    | Warning  | MREG Output pipelining     | 13         |
+| PDCN-1569 | Warning  | LUT equation term check    | 7          |
+| PLCK-12   | Warning  | Clock Placer Checks        | 1          |
+| REQP-1839 | Warning  | RAMB36 async control check | 13         |
+| REQP-1840 | Warning  | RAMB18 async control check | 1          |
+| RTSTAT-10 | Warning  | No routable loads          | 1          |
+| REQP-165  | Advisory | writefirst                 | 2          |
+| REQP-181  | Advisory | writefirst                 | 2          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/mac_muladd_10ns_10ns_22s_23_4_1_U428/fastest_accel_mac_muladd_10ns_10ns_22s_23_4_1_DSP48_1_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/mac_muladd_10ns_10ns_22s_23_4_1_U428/fastest_accel_mac_muladd_10ns_10ns_22s_23_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U112/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U112/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U113/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U113/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U114/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U114/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U115/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U115/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U116/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U116/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U117/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U117/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U118/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U118/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U119/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U119/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U120/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U120/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U121/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U121/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U122/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U122/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U123/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U123/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U124/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U124/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U125/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U125/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U126/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U126/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U127/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U127/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U128/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U128/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U129/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U129/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U130/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U130/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U131/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U131/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U132/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U132/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U133/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U133/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U134/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U134/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U135/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U135/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U136/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U136/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U137/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U137/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U138/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U138/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U139/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U139/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U140/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U140/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U141/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U141/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U142/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U142/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U143/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/grp_producer_Pipeline_SHARED_MAC_fu_693/mac_muladd_16s_8s_48s_48_4_1_U143/fastest_accel_mac_muladd_16s_8s_48s_48_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln184_reg_2843_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln184_reg_2843_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln199_reg_2799_reg input system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln199_reg_2799_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP fpga_color_i/pack_rgb5650_return1 output fpga_color_i/pack_rgb5650_return1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP fpga_color_i/pack_rgb5650_return1__0 output fpga_color_i/pack_rgb5650_return1__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP fpga_color_i/pack_rgb5650_return1__1 output fpga_color_i/pack_rgb5650_return1__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP fpga_color_i/value__0 output fpga_color_i/value__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP fpga_color_i/value__2 output fpga_color_i/value__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP fpga_color_i/value__5 output fpga_color_i/value__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP fpga_color_i/value__6 output fpga_color_i/value__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/mul_20ns_9ns_29_1_1_U426/tmp_product output system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/mul_20ns_9ns_29_1_1_U426/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP fpga_color_i/pack_rgb5650_return1 multiplier stage fpga_color_i/pack_rgb5650_return1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP fpga_color_i/pack_rgb5650_return1__0 multiplier stage fpga_color_i/pack_rgb5650_return1__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP fpga_color_i/pack_rgb5650_return1__1 multiplier stage fpga_color_i/pack_rgb5650_return1__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP fpga_color_i/value__0 multiplier stage fpga_color_i/value__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP fpga_color_i/value__2 multiplier stage fpga_color_i/value__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP fpga_color_i/value__5 multiplier stage fpga_color_i/value__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP fpga_color_i/value__6 multiplier stage fpga_color_i/value__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/add_ln283_fu_1062_p2 multiplier stage system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/add_ln283_fu_1062_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/mul_20ns_9ns_29_1_1_U426/tmp_product multiplier stage system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/mul_20ns_9ns_29_1_1_U426/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/trunc_ln277_reg_2252_reg multiplier stage system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/consumer_U0/trunc_ln277_reg_2252_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln149_reg_2694_reg multiplier stage system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln149_reg_2694_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln184_reg_2843_reg multiplier stage system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln184_reg_2843_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln199_reg_2799_reg multiplier stage system_i/system_i/fastest_accel_0/inst/grp_pipeline_fu_691/producer_U0/mul_ln199_reg_2799_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A3)+((~A3)*(~A6)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#7 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A2)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	cam_pclk_IBUF_inst (IBUF.O) is locked to F20
+	cam_pclk_buf_i (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 mirror_i/line0_reg has an input control pin mirror_i/line0_reg/ENARDEN (net: mirror_i/p_15_in) which is driven by a register (pix_reset_pipe_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 mirror_i/line0_reg has an input control pin mirror_i/line0_reg/ENBWREN (net: mirror_i/read_data00) which is driven by a register (pix_reset_pipe_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 mirror_i/line1_reg has an input control pin mirror_i/line1_reg/ENARDEN (net: mirror_i/p_15_in) which is driven by a register (pix_reset_pipe_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 mirror_i/line1_reg has an input control pin mirror_i/line1_reg/ENBWREN (net: mirror_i/read_data10) which is driven by a register (pix_reset_pipe_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/fastest_accel_0/inst/gmem_m_axi_U/store_unit_1/buff_wdata/U_fifo_mem/mem_reg has an input control pin system_i/system_i/fastest_accel_0/inst/gmem_m_axi_U/store_unit_1/buff_wdata/U_fifo_mem/mem_reg/ENARDEN (net: system_i/system_i/fastest_accel_0/inst/gmem_m_axi_U/store_unit_1/buff_wdata/U_fifo_mem/mem_reg_0) which is driven by a register (system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/fastest_accel_0/inst/gmem_m_axi_U/store_unit_1/buff_wdata/U_fifo_mem/mem_reg has an input control pin system_i/system_i/fastest_accel_0/inst/gmem_m_axi_U/store_unit_1/buff_wdata/U_fifo_mem/mem_reg/RSTREGARSTREG (net: system_i/system_i/fastest_accel_0/inst/gmem_m_axi_U/store_unit_1/buff_wdata/U_fifo_mem/mem_reg_2) which is driven by a register (system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/ENARDEN (net: system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENARDEN (net: system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 has an input control pin system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2/ENARDEN (net: system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3 has an input control pin system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3/ENARDEN (net: system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4 has an input control pin system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4/ENARDEN (net: system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_5 has an input control pin system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_5/ENARDEN (net: system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_6 has an input control pin system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_6/ENARDEN (net: system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_7 has an input control pin system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_7/ENARDEN (net: system_i/system_i/ui_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+77 net(s) have no routable loads. The problem bus(es) and/or net(s) are system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/system_i/axi_flash_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/system_i/axi_memory_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/system_i/axi_ui_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0]
+ (the first 15 of 49 listed).
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

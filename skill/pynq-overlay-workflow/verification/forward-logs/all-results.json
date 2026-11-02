@@ -1,0 +1,52 @@
+[
+  {
+    "name": "offline",
+    "argv": [
+      "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+      "-B",
+      "C:\\Users\\user\\.codex\\skills\\pynq-overlay-workflow\\scripts\\check_overlay.py",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101\\overlay-contract.json"
+    ],
+    "cwd": "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101",
+    "returncode": 0,
+    "stdout": "{\"status\": \"PASS\", \"scope\": \"offline_contract_and_files_only\", \"target\": \"temperature-logger-Zynq-UltraScale+-exact-board-unconfirmed-SYNTHETIC-DO-NOT-LOAD\", \"build_id\": \"synthetic-forward-1\", \"hashes\": {\"bit\": \"0b4340601d837d945cb1203d9a4e44323be958476a831dc72b502f134863a331\", \"hwh\": \"7daf0f282c6d511113aa396a59a3520356027d02995082355475e35f02e46e12\"}, \"ip_count\": 1, \"safe_read_count\": 1, \"board_test\": \"NOT_RUN\"}\n",
+    "stderr": ""
+  },
+  {
+    "name": "helpers",
+    "argv": [
+      "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+      "-B",
+      "C:\\Users\\user\\.codex\\skills\\pynq-overlay-workflow\\scripts\\test_helpers.py"
+    ],
+    "cwd": "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_alternative_layout (__main__.HelpersTest) ... ok\ntest_bad_offset (__main__.HelpersTest) ... ok\ntest_bool_not_address (__main__.HelpersTest) ... ok\ntest_explicit_load (__main__.HelpersTest) ... ok\ntest_identity_mismatch_fails (__main__.HelpersTest) ... ok\ntest_identity_mismatch_stops_further_reads (__main__.HelpersTest) ... ok\ntest_mask_constraint (__main__.HelpersTest) ... ok\ntest_metadata_default_no_mmio_or_download (__main__.HelpersTest) ... ok\ntest_missing_hash (__main__.HelpersTest) ... ok\ntest_not_loaded_no_mmio (__main__.HelpersTest) ... ok\ntest_offline_cli_scope (__main__.HelpersTest) ... ok\ntest_offline_valid (__main__.HelpersTest) ... ok\ntest_path_escape (__main__.HelpersTest) ... ok\ntest_second_ip_rejected_before_any_mmio (__main__.HelpersTest) ... ok\ntest_selected_read_only (__main__.HelpersTest) ... ok\ntest_side_effect_read_rejected (__main__.HelpersTest) ... ok\ntest_tampered_artifact (__main__.HelpersTest) ... ok\ntest_windows_absolute_path_rejected (__main__.HelpersTest) ... ok\ntest_wrong_metadata_blocks_mmio (__main__.HelpersTest) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.673s\n\nOK\n"
+  },
+  {
+    "name": "probe_metadata",
+    "argv": [
+      "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+      "-B",
+      "C:\\Users\\user\\.codex\\skills\\pynq-overlay-workflow\\scripts\\probe_overlay.py",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101\\overlay-contract.json"
+    ],
+    "cwd": "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101",
+    "returncode": 2,
+    "stdout": "{\"status\": \"NOT_RUN\", \"reason\": \"PYNQ unavailable in this interpreter\", \"detail\": \"No module named 'pynq'\", \"scope\": \"board_probe\"}\n",
+    "stderr": ""
+  },
+  {
+    "name": "fixture_mock",
+    "argv": [
+      "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+      "-B",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101\\fixture_mock_check.py"
+    ],
+    "cwd": "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101",
+    "returncode": 0,
+    "stdout": "{\"status\": \"PASS\", \"scope\": \"fixture_XML_crosscheck_and_mock_only\", \"synthetic_marker\": \"CONFIRMED\", \"contract_IP_vs_fixture_XML\": \"MATCH\", \"default_metadata_mock_calls\": [[\"overlay\", false]], \"safe_identity_mock_calls\": [[\"overlay\", false], [\"mmio\", 2685403136, 4096], [\"read\", 20]], \"adapter_mock_calls\": [[\"overlay\", false], [\"mmio\", 2685403136, 4096], [\"read\", 20]], \"control_status_data_access\": \"NONE\", \"board_test\": \"NOT_RUN\"}\n",
+    "stderr": ""
+  }
+]

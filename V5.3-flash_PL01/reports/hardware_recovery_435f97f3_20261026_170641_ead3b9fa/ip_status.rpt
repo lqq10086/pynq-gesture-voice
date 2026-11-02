@@ -1,0 +1,161 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Oct 26 17:06:55 2026
+| Host         : yiyu running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 28 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| Instance Name                     | Status                         | Recommendation           | Change    | IP Name            | IP      | New Version           | New        | Original Part        |
+|                                   |                                |                          | Log       |                    | Version |                       | License    |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axi_control_interconnect_0 | Up-to-date                     | No changes required      |  *(1)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 29)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 29)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axi_flash_memory_0         | Up-to-date                     | No changes required      |  *(2)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 29)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 29)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axi_memory_interconnect_0  | Up-to-date                     | No changes required      |  *(3)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 29)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 29)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axi_ui_memory_0            | Up-to-date                     | No changes required      |  *(4)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 29)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 29)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axi_vdma_0_0               | Up-to-date                     | No changes required      |  *(5)     | AXI Video Direct   | 6.3     | 6.3 (Rev. 16)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | Memory Access      | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 16)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axis_cam_cdc_0             | Up-to-date                     | No changes required      |  *(6)     | AXI4-Stream Clock  | 1.1     | 1.1 (Rev. 29)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | Converter          | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 29)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axis_ui_cdc_0              | Up-to-date                     | No changes required      |  *(7)     | AXI4-Stream Clock  | 1.1     | 1.1 (Rev. 29)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | Converter          | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 29)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axis_ui_fifo_0             | Up-to-date                     | No changes required      |  *(8)     | AXI4-Stream Data   | 2.0     | 2.0 (Rev. 10)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | FIFO               | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 10)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_axis_video_cdc_0           | Up-to-date                     | No changes required      |  *(9)     | AXI4-Stream Clock  | 1.1     | 1.1 (Rev. 29)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | Converter          | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 29)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_bbox_ack_gpio_0            | Up-to-date                     | No changes required      |  *(10)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_bbox_shadow_gpio0_0        | Up-to-date                     | No changes required      |  *(11)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_bbox_shadow_gpio1_0        | Up-to-date                     | No changes required      |  *(12)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_bbox_shadow_gpio2_0        | Up-to-date                     | No changes required      |  *(13)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_bbox_shadow_gpio3_0        | Up-to-date                     | No changes required      |  *(14)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_camera_control_0_0         | Module reference is unresolved | Resolve module reference | Change    | camera_control_axi | 1.0     | 1.0 (Rev. 1)          | Included   | xc7z020clg400-2      |
+|                                   |                                |                          | Log not   |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          | available |                    | 1)      |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_fastest_accel_0_0          | Up-to-date                     | No changes required      | Change    | Fastest_accel      | 1.0     | 1.0 (Rev. 2114846212) | Included   | xc7z020clg400-2      |
+|                                   |                                |                          | Log not   |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          | available |                    | 2114846 |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_flash_phase_gpio_0         | Up-to-date                     | No changes required      |  *(15)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_flash_phase_pad_0          | Up-to-date                     | No changes required      |  *(16)    | Concat             | 2.1     | 2.1 (Rev. 4)          | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 4)      |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_flash_zero29_0             | Up-to-date                     | No changes required      |  *(17)    | Constant           | 1.1     | 1.1 (Rev. 7)          | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 7)      |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_processing_system7_0_0     | Up-to-date                     | No changes required      |  *(18)    | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 6)          | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | System             | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 6)      |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_rst_fclk0_100m_0           | Up-to-date                     | No changes required      |  *(19)    | Processor System   | 5.0     | 5.0 (Rev. 13)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | Reset              | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 13)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_rst_fclk1_142m_0           | Up-to-date                     | No changes required      |  *(20)    | Processor System   | 5.0     | 5.0 (Rev. 13)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | Reset              | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 13)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_ui_status_gpio0_0          | Up-to-date                     | No changes required      |  *(21)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_ui_status_gpio1_0          | Up-to-date                     | No changes required      |  *(22)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_ui_vdma_0                  | Up-to-date                     | No changes required      |  *(23)    | AXI Video Direct   | 6.3     | 6.3 (Rev. 16)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           | Memory Access      | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 16)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_vdma_irq_concat_0          | Up-to-date                     | No changes required      |  *(24)    | Concat             | 2.1     | 2.1 (Rev. 4)          | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 4)      |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_video_control_gpio_0       | Up-to-date                     | No changes required      |  *(25)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| system_video_status_gpio_0        | Up-to-date                     | No changes required      |  *(26)    | AXI GPIO           | 2.0     | 2.0 (Rev. 30)         | Included   | xc7z020clg400-2      |
+|                                   |                                |                          |           |                    | (Rev.   |                       |            |                      |
+|                                   |                                |                          |           |                    | 30)     |                       |            |                      |
++-----------------------------------+--------------------------------+--------------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+*(1) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(2) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(3) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(4) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(5) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_vdma_v6_3/doc/axi_vdma_v6_3_changelog.txt
+*(6) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axis_clock_converter_v1_1/doc/axis_clock_converter_v1_1_changelog.txt
+*(7) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axis_clock_converter_v1_1/doc/axis_clock_converter_v1_1_changelog.txt
+*(8) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axis_data_fifo_v2_0/doc/axis_data_fifo_v2_0_changelog.txt
+*(9) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axis_clock_converter_v1_1/doc/axis_clock_converter_v1_1_changelog.txt
+*(10) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(11) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(12) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(13) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(14) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(15) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(16) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+*(17) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(18) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+*(19) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(20) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(21) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(22) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(23) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_vdma_v6_3/doc/axi_vdma_v6_3_changelog.txt
+*(24) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+*(25) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(26) d:/Tools/FPGA/Vivado/2023.1/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+
+

@@ -1,0 +1,23 @@
+cam_data[7]	max	0.718
+cam_data[7]	min	0.583
+cam_data[6]	max	0.460
+cam_data[6]	min	0.915
+cam_data[5]	max	0.502
+cam_data[5]	min	0.896
+cam_data[4]	max	0.475
+cam_data[4]	min	0.713
+cam_data[3]	max	0.712
+cam_data[3]	min	0.617
+cam_data[2]	max	0.668
+cam_data[2]	min	0.538
+cam_data[1]	max	0.532
+cam_data[1]	min	0.814
+cam_data[0]	max	0.356
+cam_data[0]	min	0.987
+cam_href	max	0.286
+cam_href	min	1.090
+cam_vsync	max	0.659
+cam_vsync	min	0.606
+clock:cam_pclk	11.800	0.000 5.900
+clock:cam_clk_feedback	11.800	0.000 5.900
+clock:cam_pclk_shifted	11.800	2.950 8.850

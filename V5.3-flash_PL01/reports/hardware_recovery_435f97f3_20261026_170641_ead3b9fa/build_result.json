@@ -1,0 +1,48 @@
+{
+  "status": "RECOVERED_ROUTED_HARDWARE_BUILD_PASS_NOT_BOARD",
+  "report": "D:\\Tools\\work\\V5.3-flash_PL01\\reports\\hardware_recovery_435f97f3_20261026_170641_ead3b9fa",
+  "origin_report": "reports/hardware_build_20261026_152347_435f97f3",
+  "recovered_reason": "route_design completed; post-route strategy STATUS text was incorrectly treated as failure; report existing exact checkpoint without implementation or optimization",
+  "board_validation": "NOT_RUN",
+  "route": {
+    "status": "ROUTED_CHECKS_PASS_NOT_BOARD",
+    "cdc": {
+      "status": "EXACT_BASELINE_UNSAFE_ENDPOINTS",
+      "endpoints": 108,
+      "waiver_policy": "NO_NEW_CRITICAL_OR_WARNING_ENDPOINTS_NO_BLANKET_WAIVERS"
+    },
+    "artifact_sha256": {
+      "facts.tsv": "b8a9cd8e7f0d1979b4329edf7601cfd5840e1a7278bacfa92d9fa5528918b576",
+      "bd_facts.tsv": "309cc05580ad2320a78ab99b5ffc9c78e690c4c7b9d5175d9345169e0a2bff5c",
+      "synthesis_core.tsv": "257eb2b308897dbaeecf53c85e322589ddf28ad15285a3127435dea2c1e24e8f",
+      "routed_core.tsv": "257eb2b308897dbaeecf53c85e322589ddf28ad15285a3127435dea2c1e24e8f",
+      "dual_bbox_routed.tsv": "6c53ac5b2c319d1b07042bf537512ea0edd5248c06216157b5d7ce8485703b30",
+      "timing_summary.rpt": "34f120c4b2841fda72b41b98eaea49553e010efea8333e435b2c81ead7fb591b",
+      "pulse_width.rpt": "077620c5238705967a51705c62ad23a427885797edeb31ee5e9c909be87c1a8e",
+      "bus_skew.rpt": "fc838b7ccda744ebb512c905d3c93f071e677a96b078b0554315ced183efe319",
+      "utilization.rpt": "a5b3e6ba59072e3d51ebb81692fbc07907fd2118fd2c72f2bd5c0d7f307c4410",
+      "drc.rpt": "ffd66ae9045064e509752f1d4760b037f2ade2625d3a5dd9422e8cb2d2caea16",
+      "cdc_unwaived_view.rpt": "484d5ca3dcde50d9f5e09f0d5022fe5291af9d21a5386b7e62f7299b93fb12dc",
+      "check_timing.rpt": "340c168cb6ebd33aaf9421d7df4afa4a2ce59d5e7fdeffdd65696854066489d1",
+      "camera_input_facts.tsv": "2364ae29895c9b2e9f5112c0ace3e3d00fd2a693c26d5d9847ab0a524ab1e53d",
+      "camera_input_setup.rpt": "a5945602cfda6c12437f2a4367f4cf7661b8b6f018bdeb5c36e6e9d0473f973e",
+      "camera_input_hold.rpt": "7f51313015d96f5aa384b5dac5a99d48c579bdcb096e846a281eebc170d11e05",
+      "clocks.rpt": "01a71e5245890fdb65f299d47c5bdeb124849709bdbd2c0bc52227d810afb876",
+      "clock_interaction.rpt": "2351ba019a5893ab1819ccc1bef783e66e8e4fc03ef736e8d96c6eaa4a732e35",
+      "exceptions_coverage.rpt": "2f99133be1a21b409c47552efe15cdc942a5a35911bb1bdddd218c8e316db3ca",
+      "exceptions_ignored.rpt": "00a61ef70a7f47a19ad9831e05503aedb5ed4c833834d68939060b462861387f",
+      "route_status.rpt": "4dc0e7ceb65426ae8c89e5d94e855a8b962184b9a546e56194f4d2f7cb79bd89",
+      "ip_status.rpt": "32e9a9ea9f9e0284b4bbb62ec3522eea2e2071f9b5bc9ace5a1f2d7fc329a07f",
+      "compiled_inventory.rpt": "ffc051130908157041a0ade393fdd7fdf0c3dcf9b9a41ca3929378abbf11a1b5",
+      "final_routed.dcp": "8ffa9bda91d1fcc2bd83740546bad00b180237bee3be1a8472df3f82862b3c81",
+      "flash_pl01.hwh": "d6ef66b5102eec3dc2942ebe8b9e629d3db0639ea4a10bbd19559298e9e4ba2c",
+      "route_stage_complete.txt": "9b6419c2983bb8df480cf9db6c841efe1321f59d39fa439debfe9bd6955895b8",
+      "baseline_cdc_unwaived.rpt": "32327b3983620e0ded13c3db6ea28efac7954d17c5d9d859e4aaa953f1077903"
+    }
+  },
+  "files": {
+    "flash_pl01.bit": "7c6de24f663c9dd94ad1e51ff05382cc53fcfa773327f6c4dd052a08dcc8ce75",
+    "flash_pl01.hwh": "d6ef66b5102eec3dc2942ebe8b9e629d3db0639ea4a10bbd19559298e9e4ba2c",
+    "final_routed.dcp": "8ffa9bda91d1fcc2bd83740546bad00b180237bee3be1a8472df3f82862b3c81"
+  }
+}

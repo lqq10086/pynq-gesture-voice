@@ -1,0 +1,44 @@
+{
+  "schema": "pl01-full96-hls-csim-v1",
+  "status": "FULL96_INTEGER_CSIM_PASS_NOT_RTL_NOT_BOARD",
+  "operations": 96,
+  "convolutions": 79,
+  "compared_elements": 4750416,
+  "workspace_elements": 5192784,
+  "initial_input_only": true,
+  "golden_intermediate_values_fed_to_kernel": false,
+  "source_sha256": {
+    "hls/fastest_accel.cpp": "b91dd3ad15984304ac242284138896fe414287a11b57340fdc460b6eb3dd0df0",
+    "hls/fastest_accel.h": "32b89726021ebe158db9d33c43cafbf554390ab8176103f8e1ae41f2d5f17512"
+  },
+  "testbench_sha256": {
+    "hls/test_hls_graph.cpp": "6f93f45e48176658c8749289f3acb58db087f6aee7c6e586e954f2da49a9412d",
+    "hls/test_hls_accel.cpp": "b61652169014ae05b6df179c277d8b56b59d39504fe74558c062318240c37e0a",
+    "hls/run_graph_csim.tcl": "518d183e0b224459efa0b535591fd69b7d10c3e22f9743db8f9093f6ee21f53b",
+    "hls/run_csim.tcl": "a8b334db63905929a0626900b42d03c692e86b931a0d6dd70e159821a4c3fcfe"
+  },
+  "physical_bundle_manifest": {
+    "file": "reports/physical_bundle_2402/manifest.json",
+    "sha256": "1bc2af385b11f86933465721d40cac1f36d3dba432af4ff065cde42a366e39a6"
+  },
+  "package_manifest_sha256": "134c346dda92624316901046c802e1737461a34a0734fb9c9fde215df114a289",
+  "full_graph_log": {
+    "file": "reports/hls_full96_q1.log",
+    "sha256": "2908b1359ee1da676a38204624e456855990bb9f8da48edeb1ab24986c41674c"
+  },
+  "directed_and_real_layer_log": {
+    "file": "reports/hls_csim_q1.log",
+    "sha256": "74ec79d07cb9f0a4fc425a1c1f0a15292daa34d931189814cda5118b0536cc77"
+  },
+  "directed_scope": [
+    "signed_ties_even",
+    "saturation",
+    "negative_pool_padding",
+    "DW3_DW5_true_groups",
+    "stem884736",
+    "PW288_to72",
+    "workspace_offsets_above1000000",
+    "cascaded_RNE_not_combined",
+    "reject_without_write"
+  ]
+}

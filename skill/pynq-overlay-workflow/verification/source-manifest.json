@@ -1,0 +1,61 @@
+{
+  "client_date": "2026-11-01",
+  "scope": "read-only source attribution; not a fresh board validation",
+  "sources": [
+    {
+      "collection": "course-project",
+      "relative_path": "scripts/create_project.tcl",
+      "sha256": "ab0f0e4e60752f40625c6bfb3b5da59180d8a73dc3eac3ebbbed8bd4c961709b"
+    },
+    {
+      "collection": "course-project",
+      "relative_path": "snakegame/hardware.py",
+      "sha256": "95801a07153f0d20ad711385d9cd8eac78ab92949d0fb02be95960ce6a333362"
+    },
+    {
+      "collection": "course-project",
+      "relative_path": "docs/VALIDATION.md",
+      "sha256": "b33aae92e3b958937d068a3da2a3d5890b27c7e1d00b1188b993670e1d70a03c"
+    },
+    {
+      "collection": "course-project",
+      "relative_path": "reports/build_result.txt",
+      "sha256": "2813c971ac73cea9a58accde1fcb7257f6ee103d4f6578fc8a2cfba74afe98ef"
+    },
+    {
+      "collection": "course-project",
+      "relative_path": "reports/board_arm_tests.log",
+      "sha256": "f6b746250054131780f53f5c9d60d12eac8bd3ca9c919de72a1406b801344df1"
+    },
+    {
+      "collection": "course-project",
+      "relative_path": "reports/rtl_result.log",
+      "sha256": "38f9a520b8678eedb1f4eaee23c042d2d38c11a7eafee87d10280a8482c6b882"
+    },
+    {
+      "collection": "course-project",
+      "relative_path": "reports/restart_20261031_result.json",
+      "sha256": "10234942c0ccd24f88c18a393dbe19e6d13f3b6ecf8789d91100d8b06b71618c"
+    },
+    {
+      "collection": "course-project",
+      "relative_path": "reference/source_hashes.json",
+      "sha256": "e2abf63e5d9d549d6b48bc85edf839893c0b10a2f11ec6b74cba8d8aa1d4f8c0"
+    },
+    {
+      "collection": "prior-skill-materials",
+      "relative_path": "3/README.md",
+      "sha256": "cc2aa2e2210ce0d918f74ba5982ef9dccd285789f2c2df144d8c7e7e4a3023f7"
+    },
+    {
+      "collection": "prior-skill-materials",
+      "relative_path": "3/pynq/boardctl.py",
+      "sha256": "5578c3d219fead5b07acf256b6f798b380c2c5851edc999ae4b5a0bbe35b06f0"
+    },
+    {
+      "collection": "prior-skill-materials",
+      "relative_path": "3/vivado/create_hardware_project.tcl",
+      "sha256": "3ee797cf898ec30baa4cf991f747bb527c308c27d5473807a340a04876429858"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+fastest_core_count	1
+old_conv_core_count	0
+hp1_enabled	1
+hp1_width	64
+control_MI	14
+new_hp1_clock	FCLK0

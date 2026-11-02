@@ -1,0 +1,12 @@
+{
+  "name": "helpers",
+  "argv": [
+    "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "-B",
+    "C:\\Users\\user\\.codex\\skills\\pynq-overlay-workflow\\scripts\\test_helpers.py"
+  ],
+  "cwd": "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_alternative_layout (__main__.HelpersTest) ... ok\ntest_bad_offset (__main__.HelpersTest) ... ok\ntest_bool_not_address (__main__.HelpersTest) ... ok\ntest_explicit_load (__main__.HelpersTest) ... ok\ntest_identity_mismatch_fails (__main__.HelpersTest) ... ok\ntest_identity_mismatch_stops_further_reads (__main__.HelpersTest) ... ok\ntest_mask_constraint (__main__.HelpersTest) ... ok\ntest_metadata_default_no_mmio_or_download (__main__.HelpersTest) ... ok\ntest_missing_hash (__main__.HelpersTest) ... ok\ntest_not_loaded_no_mmio (__main__.HelpersTest) ... ok\ntest_offline_cli_scope (__main__.HelpersTest) ... ok\ntest_offline_valid (__main__.HelpersTest) ... ok\ntest_path_escape (__main__.HelpersTest) ... ok\ntest_second_ip_rejected_before_any_mmio (__main__.HelpersTest) ... ok\ntest_selected_read_only (__main__.HelpersTest) ... ok\ntest_side_effect_read_rejected (__main__.HelpersTest) ... ok\ntest_tampered_artifact (__main__.HelpersTest) ... ok\ntest_windows_absolute_path_rejected (__main__.HelpersTest) ... ok\ntest_wrong_metadata_blocks_mmio (__main__.HelpersTest) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.673s\n\nOK\n"
+}

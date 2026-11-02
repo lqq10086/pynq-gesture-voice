@@ -1,0 +1,86 @@
+{
+  "status": "TARGET_CPU_NUMERIC_PASS",
+  "scope": "ARM_OPENCV_CPU_NATIVE_PREPROCESS_TO_RESTORED_NMS_NO_MMIO_NO_CAMERA_NO_PL",
+  "version": "V5.3-flash",
+  "model_sha256": "e210ef35bdd9ea8e6f622cda6eba92ef5ef4b2d80371bdc204d39914d23bb394",
+  "cases": [
+    {
+      "role": "open_palm",
+      "passed": true,
+      "native_color_byte_exact": true,
+      "input_tensor_max_abs": 0.0,
+      "box_max_abs_pixels": 7.62939453125e-05,
+      "probability_max_abs": 2.1457672119140625e-06,
+      "postprocess_match": true,
+      "detections": [
+        {
+          "label": "open_palm",
+          "confidence": 0.9081324338912964,
+          "box": [
+            867,
+            130,
+            1149,
+            441
+          ]
+        },
+        {
+          "label": "pinch_point",
+          "confidence": 0.45264652371406555,
+          "box": [
+            438,
+            324,
+            534,
+            429
+          ]
+        }
+      ]
+    },
+    {
+      "role": "pinch_point",
+      "passed": true,
+      "native_color_byte_exact": true,
+      "input_tensor_max_abs": 0.0,
+      "box_max_abs_pixels": 7.62939453125e-05,
+      "probability_max_abs": 1.430511474609375e-06,
+      "postprocess_match": true,
+      "detections": [
+        {
+          "label": "pinch_point",
+          "confidence": 0.8785980343818665,
+          "box": [
+            257,
+            56,
+            373,
+            168
+          ]
+        },
+        {
+          "label": "pinch_point",
+          "confidence": 0.8777347803115845,
+          "box": [
+            334,
+            453,
+            452,
+            554
+          ]
+        }
+      ]
+    },
+    {
+      "role": "empty_background",
+      "passed": true,
+      "native_color_byte_exact": true,
+      "input_tensor_max_abs": 0.0,
+      "box_max_abs_pixels": 9.1552734375e-05,
+      "probability_max_abs": 2.086162567138672e-06,
+      "postprocess_match": true,
+      "detections": []
+    }
+  ],
+  "platform": {
+    "machine": "armv7l",
+    "python": "3.10.4",
+    "opencv": "4.5.4",
+    "threads": 2
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "selected_fields",
+  "source_archive": "Task4_pynq_snake.zip",
+  "source_relative_path": "Task4_pynq_snake/reports/board_validation.json",
+  "source_sha256": "408361075c3e9eafdb553190109bd46a8f92a5e67b52cdc2fa643c644b5a4920",
+  "fields": {
+    "client_date": "2026-10-25",
+    "pynq_version": "3.1.2",
+    "overlay_loaded": true,
+    "register_clock_reset_gate_signature_check": "PASS",
+    "user_confirmed_display_digits_and_segments": true,
+    "user_confirmed_score_time_agree": true,
+    "physical_calibration": {
+      "calibrated": true,
+      "verified": [
+        "six physical labels",
+        "2s hold single event",
+        "segment A-G/DP",
+        "digits 0-9",
+        "left-to-right order"
+      ]
+    }
+  }
+}

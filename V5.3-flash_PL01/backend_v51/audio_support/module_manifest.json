@@ -1,0 +1,52 @@
+{
+  "kernel": "6.6.10-xilinx-v2024.1-g9299000c9490",
+  "source_manifest_sha256": "2fef8df4b656e932d9ba3a51250cb4a6835bb21ba6998b329eb7c4a497657774",
+  "installed_symvers_sha256": "691f689a91121517e257d47421dbc9aa3f41575629306b512f820f7eafb5ab58",
+  "build_symvers_sha256": "691f689a91121517e257d47421dbc9aa3f41575629306b512f820f7eafb5ab58",
+  "compiler": "gcc-12 (Ubuntu 12-20220319-1ubuntu1) 12.0.1 20220319 (experimental) [master r12-7719-g8ca61ad148f]",
+  "config_changes": {
+    "CONFIG_AS_VERSION": {
+      "installed": "CONFIG_AS_VERSION=23900",
+      "build": "CONFIG_AS_VERSION=23800"
+    },
+    "CONFIG_CC_VERSION_TEXT": {
+      "installed": "CONFIG_CC_VERSION_TEXT=\"gcc (GCC) 12.2.0\"",
+      "build": "CONFIG_CC_VERSION_TEXT=\"gcc-12 (Ubuntu 12-20220319-1ubuntu1) 12.0.1 20220319 (experimental) [master r12-7719-g8ca61ad148f]\""
+    },
+    "CONFIG_GCC_VERSION": {
+      "installed": "CONFIG_GCC_VERSION=120200",
+      "build": "CONFIG_GCC_VERSION=120001"
+    },
+    "CONFIG_LD_VERSION": {
+      "installed": "CONFIG_LD_VERSION=23900",
+      "build": "CONFIG_LD_VERSION=23800"
+    }
+  },
+  "modules": {
+    "snd-usb-audio.ko": {
+      "sha256": "ab5233d0ea35ff2c8a17580274117b2715e0b16edfa1b21cd18bbc8bcab81131",
+      "bytes": 314964,
+      "vermagic": "6.6.10-xilinx-v2024.1-g9299000c9490 SMP preempt mod_unload modversions ARMv7 p2v8"
+    },
+    "snd-usbmidi-lib.ko": {
+      "sha256": "43ce441158858af497f24c85bc6c28b6e94a19ad89699f5d97122c6c21e4772c",
+      "bytes": 33332,
+      "vermagic": "6.6.10-xilinx-v2024.1-g9299000c9490 SMP preempt mod_unload modversions ARMv7 p2v8"
+    },
+    "snd-hwdep.ko": {
+      "sha256": "5fc195f7360f18b84f36c0a2ee359890f2a69abdde34e92916bc6c27d12aee72",
+      "bytes": 14800,
+      "vermagic": "6.6.10-xilinx-v2024.1-g9299000c9490 SMP preempt mod_unload modversions ARMv7 p2v8"
+    },
+    "snd-rawmidi.ko": {
+      "sha256": "8e8699a1368194ace745cc0e1fe55a7499ddfefdb74bbac172b62adf2c1a136c",
+      "bytes": 38416,
+      "vermagic": "6.6.10-xilinx-v2024.1-g9299000c9490 SMP preempt mod_unload modversions ARMv7 p2v8"
+    }
+  },
+  "modules_symvers_sha256": "fe78c64ac59462cf1a32a16f7167ff3fea67fb10bed8a58e298a5e6d95750170",
+  "arecord": {
+    "path": "bin/arecord",
+    "sha256": "648b24b8b766ba8b71a5a065e35dd2a2fa0cc81d684182ba8c0ec004d46f6555"
+  }
+}

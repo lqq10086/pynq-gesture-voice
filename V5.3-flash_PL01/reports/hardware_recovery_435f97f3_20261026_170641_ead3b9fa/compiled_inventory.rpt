@@ -1,0 +1,54 @@
+Source compile order for 'synthesis' with fileset 'sources_1' in source management mode 'All':
+Index  File Name                         Used_In      File_Type  Library            Ngc Wrapper  Full Path Name
+-----  --------------------------------  -----------  ---------  -----------------  -----------  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1      s2mm_write_observer.v             Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/s2mm_write_observer.v
+2      stats_snapshot_cdc.v              Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/stats_snapshot_cdc.v
+3      video_axis_monitor.v              Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/video_axis_monitor.v
+4      video_stats_snapshot.v            Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/video_stats_snapshot.v
+5      camera_control_axi.v              Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/camera_control_axi.v
+6      xlconcat_v2_1_vl_rfs.v            Synth & Sim  Verilog    xlconcat_v2_1_4    No           d:/Tools/work/V5.3-flash_PL01/hardware_project/hardware_build/vivado_flash_pl01/flash_pl01.gen/sources_1/bd/system/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v
+7      system_vdma_irq_concat_0.v        Synth        Verilog    xil_defaultlib     No           d:/Tools/work/V5.3-flash_PL01/hardware_project/hardware_build/vivado_flash_pl01/flash_pl01.gen/sources_1/bd/system/ip/system_vdma_irq_concat_0/synth/system_vdma_irq_concat_0.v
+8      system_flash_phase_pad_0.v        Synth        Verilog    xil_defaultlib     No           d:/Tools/work/V5.3-flash_PL01/hardware_project/hardware_build/vivado_flash_pl01/flash_pl01.gen/sources_1/bd/system/ip/system_flash_phase_pad_0/synth/system_flash_phase_pad_0.v
+9      xlconstant_v1_1_vl_rfs.v          Synth & Sim  Verilog    xlconstant_v1_1_7  No           d:/Tools/work/V5.3-flash_PL01/hardware_project/hardware_build/vivado_flash_pl01/flash_pl01.gen/sources_1/bd/system/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v
+10     system_flash_zero29_0.v           Synth        Verilog    xil_defaultlib     No           d:/Tools/work/V5.3-flash_PL01/hardware_project/hardware_build/vivado_flash_pl01/flash_pl01.gen/sources_1/bd/system/ip/system_flash_zero29_0/synth/system_flash_zero29_0.v
+11     system.v                          Synth        Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware_build/vivado_flash_pl01/flash_pl01.gen/sources_1/bd/system/synth/system.v
+12     axis_mirror_rgb565.v              Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/axis_mirror_rgb565.v
+13     axis_rgb565_video_out.v           Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/axis_rgb565_video_out.v
+14     axis_ui_blend.v                   Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/axis_ui_blend.v
+15     bbox_overlay.v                    Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/bbox_overlay.v
+16     camera_config_v02.v               Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/camera_config_v02.v
+17     camera_control_bridge.v           Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/camera_control_bridge.v
+18     camera_dvp_to_axis_rgb565.v       Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/camera_dvp_to_axis_rgb565.v
+19     clk_gen.v                         Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/clk_gen.v
+20     color_mode_control.v              Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/color_mode_control.v
+21     color_status_cdc.v                Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/color_status_cdc.v
+22     dvi_tx.v                          Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/dvi_tx.v
+23     fpga_color_pipeline.v             Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/fpga_color_pipeline.v
+24     fpga_spatial_chroma_correction.v  Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/fpga_spatial_chroma_correction.v
+25     ov5640_af.v                       Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/ov5640_af.v
+26     pl_color_commit.v                 Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/pl_color_commit.v
+27     pl_color_frame_control.v          Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/pl_color_frame_control.v
+28     sccb_write.v                      Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/sccb_write.v
+29     sensor_wb_bridge.v                Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/sensor_wb_bridge.v
+30     sensor_wb_control.v               Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/sensor_wb_control.v
+31     serializer_10to1.v                Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/serializer_10to1.v
+32     system_wrapper.v                  Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware_build/vivado_flash_pl01/flash_pl01.gen/sources_1/bd/system/hdl/system_wrapper.v
+33     tmds_encoder.v                    Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/tmds_encoder.v
+34     ui_present_monitor.v              Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/ui_present_monitor.v
+35     ui_status_cdc.v                   Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/ui_status_cdc.v
+36     video_timing.v                    Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/video_timing.v
+37     system_top.v                      Synth & Sim  Verilog    xil_defaultlib     No           D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/rtl/system_top.v
+
+
+Constraint evaluation order for 'synthesis' with fileset 'sources_1' & with fileset 'constrs_1':
+Index  File Name                        Used_In       Scoped_To_Ref  Scoped_To_Cells  Processing_Order  Out_Of_Context  Full Path Name
+-----  -------------------------------  ------------  -------------  ---------------  ----------------  --------------  ---------------------------------------------------------------------------------------------------
+1      ax7020_ddr_vdma_ov5640_hdmi.xdc  Synth & Impl                                  NORMAL                            D:/Tools/work/V5.3-flash_PL01/hardware_project/hardware/constraints/ax7020_ddr_vdma_ov5640_hdmi.xdc
+
+
+Missing instances for 'synthesis' with fileset 'sources_1':
+Index  Instance Path  File Path  Line
+-----  -------------  ---------  ----
+< empty >
+
+

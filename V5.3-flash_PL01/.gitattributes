@@ -1,0 +1,3 @@
+# Original bytes are bound by SHA-256 in the runtime manifest.
+# Preserve them in Git; do not normalize line endings on add/checkout.
+* -text

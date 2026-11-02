@@ -1,0 +1,45 @@
+{
+  "model_sha256": "3ba69ce25399e3cb728463aaffa07518d69e43c985565198e93ef21357ef24ab",
+  "labels": [
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "back",
+    "on",
+    "off",
+    "stop",
+    "unknown",
+    "silence"
+  ],
+  "input": {
+    "dtype": "float32",
+    "shape": [
+      1,
+      1,
+      40,
+      151
+    ],
+    "sample_rate": 16000,
+    "num_samples": 24000
+  },
+  "output": {
+    "dtype": "float32",
+    "shape": [
+      1,
+      11
+    ],
+    "representation": "logits"
+  },
+  "runtime_assets": {
+    "ds_cnn_en8.onnx": "3ba69ce25399e3cb728463aaffa07518d69e43c985565198e93ef21357ef24ab",
+    "norm_stats_en8.npz": "a585bbc79832e2e2a9cb5fcd03b2b3c54f9d77650a1f0841c3e8cfc8967e6d5f",
+    "thresholds.json": "2ac7e406e66fc87dcc14728b0e5000e6be7868048f8e591eb35336992269de32"
+  },
+  "runtime_config_sha256": "7209e608a8bcb9e5fc0013d93d84156e7608e0a7a3d9708f0c8d2fd275f6248f",
+  "model_decision": "source per-class thresholds and back boost >= 0.20; session live confidence gate is recorded in application configs",
+  "app_mapping": "one/two/three/four retain existing level 1/2/3/town mapping; five and stop do not add application commands",
+  "board_verified": false,
+  "distribution_note": "Redistribution rights for model weights and upstream training materials have not yet been verified; third-party source-code licenses remain under review."
+}

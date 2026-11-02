@@ -1,0 +1,26 @@
+Client date: 2026-11-01
+Execution: isolated PC Python 3.12.14; synthetic fixtures and mock PYNQ; no board access.
+test_alternative_layout (__main__.HelpersTest.test_alternative_layout) ... ok
+test_bad_offset (__main__.HelpersTest.test_bad_offset) ... ok
+test_bool_not_address (__main__.HelpersTest.test_bool_not_address) ... ok
+test_explicit_load (__main__.HelpersTest.test_explicit_load) ... ok
+test_identity_mismatch_fails (__main__.HelpersTest.test_identity_mismatch_fails) ... ok
+test_identity_mismatch_stops_further_reads (__main__.HelpersTest.test_identity_mismatch_stops_further_reads) ... ok
+test_mask_constraint (__main__.HelpersTest.test_mask_constraint) ... ok
+test_metadata_default_no_mmio_or_download (__main__.HelpersTest.test_metadata_default_no_mmio_or_download) ... ok
+test_missing_hash (__main__.HelpersTest.test_missing_hash) ... ok
+test_not_loaded_no_mmio (__main__.HelpersTest.test_not_loaded_no_mmio) ... ok
+test_offline_cli_scope (__main__.HelpersTest.test_offline_cli_scope) ... ok
+test_offline_valid (__main__.HelpersTest.test_offline_valid) ... ok
+test_path_escape (__main__.HelpersTest.test_path_escape) ... ok
+test_second_ip_rejected_before_any_mmio (__main__.HelpersTest.test_second_ip_rejected_before_any_mmio) ... ok
+test_selected_read_only (__main__.HelpersTest.test_selected_read_only) ... ok
+test_side_effect_read_rejected (__main__.HelpersTest.test_side_effect_read_rejected) ... ok
+test_tampered_artifact (__main__.HelpersTest.test_tampered_artifact) ... ok
+test_windows_absolute_path_rejected (__main__.HelpersTest.test_windows_absolute_path_rejected) ... ok
+test_wrong_metadata_blocks_mmio (__main__.HelpersTest.test_wrong_metadata_blocks_mmio) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.237s
+
+OK

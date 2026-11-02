@@ -1,0 +1,9 @@
+{
+  "status": "SANITIZED_RUNTIME_IDENTITY_ONLY_NOT_BOARD_QUALIFIED",
+  "source_plan_sha256": "0f3ef319e36467f736062b2720b2b8c53cb295cbb0bda0163020774e5fa6f1a9",
+  "files": {
+    "channel_offsets.bin": "925a0e90e6eef277253138afa0d0930b680da49a61364eec2ee453540f7e15b6",
+    "channel_shifts.bin": "e315dfe9a555c35a10f5d6413f0a1c6c102811fb710d053ca596abd6068518b5",
+    "plan.json": "a00d927d6be33b798b73167973cf7c58a6d92d7b6247c08a63c608b9255e5465"
+  }
+}

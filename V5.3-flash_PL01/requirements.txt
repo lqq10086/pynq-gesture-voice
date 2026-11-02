@@ -1,0 +1,5 @@
+numpy>=1.21.5,<3
+opencv-python>=4.5.4,<6
+Pillow>=9,<13
+sounddevice>=0.4.6; platform_system == "Windows"
+# Linux board audio uses the existing ALSA adapter. No new 3D or AI dependencies.

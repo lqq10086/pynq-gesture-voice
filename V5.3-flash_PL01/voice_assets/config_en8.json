@@ -1,0 +1,232 @@
+{
+  "audio": {
+    "sample_rate": 16000,
+    "duration_sec": 1.5,
+    "num_samples": 24000,
+    "channels": 1,
+    "mono": true,
+    "bit_depth": 16
+  },
+  "mfcc": {
+    "sample_rate": 16000,
+    "feature_type": "mfcc",
+    "frame_length_ms": 25.0,
+    "frame_shift_ms": 10.0,
+    "n_fft": 512,
+    "win_length": 400,
+    "hop_length": 160,
+    "num_mel_bins": 40,
+    "num_ceps": 40,
+    "fmin": 20.0,
+    "fmax": 8000.0,
+    "preemphasis": 0.97,
+    "center": true,
+    "window": "hann",
+    "log_eps": 1e-06,
+    "normalize": {
+      "enabled": true,
+      "file": "norm_stats_en8.npz"
+    }
+  },
+  "classes": {
+    "keywords": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "back",
+      "on",
+      "off",
+      "stop"
+    ],
+    "unknown_label": "unknown",
+    "silence_label": "silence",
+    "known_words": [
+      "back",
+      "backward",
+      "bed",
+      "bird",
+      "cat",
+      "dog",
+      "down",
+      "eight",
+      "five",
+      "follow",
+      "forward",
+      "four",
+      "go",
+      "happy",
+      "house",
+      "learn",
+      "left",
+      "marvin",
+      "nine",
+      "no",
+      "off",
+      "on",
+      "one",
+      "right",
+      "seven",
+      "sheila",
+      "silence",
+      "six",
+      "stop",
+      "three",
+      "tree",
+      "two",
+      "up",
+      "visual",
+      "wow",
+      "yes",
+      "zero"
+    ]
+  },
+  "model": {
+    "name": "ds_cnn_small",
+    "input_channels": 1,
+    "input_freq": 40,
+    "input_time": 151,
+    "conv1_filters": 24,
+    "conv1_kernel": [
+      10,
+      4
+    ],
+    "conv1_stride": [
+      2,
+      2
+    ],
+    "blocks": [
+      {
+        "filters": 32,
+        "kernel": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "pool_kernel": [
+          2,
+          2
+        ],
+        "pool_stride": [
+          2,
+          2
+        ]
+      },
+      {
+        "filters": 32,
+        "kernel": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "pool_kernel": [
+          2,
+          2
+        ],
+        "pool_stride": [
+          2,
+          2
+        ]
+      },
+      {
+        "filters": 64,
+        "kernel": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "pool_kernel": [
+          2,
+          1
+        ],
+        "pool_stride": [
+          2,
+          1
+        ]
+      },
+      {
+        "filters": 64,
+        "kernel": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "pool_kernel": [
+          2,
+          1
+        ],
+        "pool_stride": [
+          2,
+          1
+        ]
+      }
+    ],
+    "dropout": 0.2,
+    "dropout_fc": 0.1
+  },
+  "inference": {
+    "onnx_path": "models/ds_cnn_en8.onnx",
+    "results_dir": "validation/results_en8",
+    "window_ms": 1500,
+    "hop_ms": 100,
+    "confidence_threshold": 0.55,
+    "smoothing": 2
+  },
+  "realtime": {
+    "vad": {
+      "backend": "auto",
+      "frame_ms": 30.0,
+      "ratio_db": 6.0,
+      "min_dbfs": -50.0,
+      "noise_init_dbfs": -50.0,
+      "zcr_max": 0.55,
+      "zcr_extra_db": 6.0,
+      "flatness_max": 0.5,
+      "flatness_extra_db": 8.0,
+      "noise_floor_dbfs": -60.0,
+      "noise_ceiling_dbfs": -30.0,
+      "noise_warmup_frames": 5,
+      "settle_frames": 10,
+      "start_frames": 3,
+      "end_frames": 10,
+      "pre_roll_frames": 6,
+      "max_utterance_ms": 3000.0,
+      "min_observe_frames": 20,
+      "idle_ratchet": 0.08,
+      "idle_ratchet_window": 48,
+      "idle_ratchet_pct": 40.0
+    },
+    "detect": {
+      "mode": "utterance",
+      "threshold": 0.55,
+      "cooldown_ms": 900,
+      "targets": null,
+      "stop_word": "stop",
+      "min_utterance_ms": 300
+    },
+    "audio": {
+      "device": null,
+      "block_ms": 30.0,
+      "beep": true
+    },
+    "display": {
+      "show_scores": true,
+      "show_state": true,
+      "show_level": true,
+      "level_interval_s": 3.0
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "relative_path": "SKILL.md",
+    "sha256": "87b390e63ce01dd5cc5f17e3d918d8928d5342d3f8deb110dde15c8d4937994a",
+    "last_write_time_utc": "2026-11-01T05:38:43.0656067Z",
+    "recorded": "after execution"
+  },
+  {
+    "relative_path": "scripts\\check_overlay.py",
+    "sha256": "31a95a10701dd4ea4f69294e5ecdc143431ab04ff752b146ccb4f75ecc0f9064",
+    "last_write_time_utc": "2026-11-01T05:34:47.9491704Z",
+    "recorded": "after execution"
+  },
+  {
+    "relative_path": "scripts\\probe_overlay.py",
+    "sha256": "e4445728299dc2674617941dd3f35bed232b7dc0694fe4bf061ba01e2e9c97d3",
+    "last_write_time_utc": "2026-11-01T05:36:59.3651180Z",
+    "recorded": "after execution"
+  },
+  {
+    "relative_path": "scripts\\overlay_contract.py",
+    "sha256": "a651f96ae308ac701516e0b6cb30bddce7383d6de4dad16dd0309ac90b39cfd5",
+    "last_write_time_utc": "2026-11-01T05:34:47.9481614Z",
+    "recorded": "after execution"
+  },
+  {
+    "relative_path": "scripts\\test_helpers.py",
+    "sha256": "95ab82fafe1a79a0283688f8dce3bdb0443af3f8a104cd60753246e02857071a",
+    "last_write_time_utc": "2026-11-01T05:36:59.3672375Z",
+    "recorded": "after execution"
+  }
+]

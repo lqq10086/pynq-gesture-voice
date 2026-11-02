@@ -1,0 +1,12 @@
+{
+  "name": "fixture_mock",
+  "argv": [
+    "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "-B",
+    "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101\\fixture_mock_check.py"
+  ],
+  "cwd": "C:\\Users\\user\\AppData\\Local\\Temp\\pynq-skill-forward-20261101",
+  "returncode": 0,
+  "stdout": "{\"status\": \"PASS\", \"scope\": \"fixture_XML_crosscheck_and_mock_only\", \"synthetic_marker\": \"CONFIRMED\", \"contract_IP_vs_fixture_XML\": \"MATCH\", \"default_metadata_mock_calls\": [[\"overlay\", false]], \"safe_identity_mock_calls\": [[\"overlay\", false], [\"mmio\", 2685403136, 4096], [\"read\", 20]], \"adapter_mock_calls\": [[\"overlay\", false], [\"mmio\", 2685403136, 4096], [\"read\", 20]], \"control_status_data_access\": \"NONE\", \"board_test\": \"NOT_RUN\"}\n",
+  "stderr": ""
+}

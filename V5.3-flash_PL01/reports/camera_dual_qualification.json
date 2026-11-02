@@ -1,0 +1,88 @@
+{
+  "schema": "v52-dual-overlay-camera-only-v1",
+  "status": "CAMERA_CHAIN_AND_DUAL_OVERLAY_VERIFIED",
+  "neural_network_scope": "NOT_PRESENT_CPU_ONLY",
+  "baseline_hardware": {
+    "bitstream_sha256": "b28294463632fd45a10b9bcba0704e6eb626c656960276b5cf204ae007e16ab1",
+    "hwh_sha256": "e33d31fe8eb0cbc1c5756ef9d70a3dc01cb5c8845788276280efab2146974549"
+  },
+  "hardware": {
+    "bitstream_sha256": "4f65cb62178d2d384416db45c7b02e2c89878e8b575ab851cbabc216e59325c6",
+    "hwh_sha256": "37b819761b89828729e9208f688f0bd75369b27545658621ebfe32afe8c39cc6"
+  },
+  "references": {
+    "baseline_manifest": {
+      "file": "reports/camera_reference/baseline_manifest.json",
+      "sha256": "ac11ce2d55ce6ac9064c171f33b8c183f32a611e6882a42878888d8260d00468"
+    },
+    "build_manifest": {
+      "file": "reports/camera_reference/build_manifest.json",
+      "sha256": "043051fabaed80f0e5d4b955b78bf43ab1f2f2cb7177706646296ea369b418b3"
+    },
+    "source_copy": {
+      "file": "reports/camera_reference/source_copy.json",
+      "sha256": "6856e1bb927748f3c06208155a65eb7521c4f2964700d063b9d1cbb0f7f2209b"
+    },
+    "preserved_sources": {
+      "file": "reports/camera_reference/preserved_sources.json",
+      "sha256": "7c3e247e370d2a37b56aa9e50f55c6b6fa23c1df775e528a299e317c9afbffe2"
+    },
+    "baseline_hwh": {
+      "file": "reports/camera_reference/baseline_hwh.hwh",
+      "sha256": "e33d31fe8eb0cbc1c5756ef9d70a3dc01cb5c8845788276280efab2146974549"
+    },
+    "baseline_top": {
+      "file": "reports/camera_reference/baseline_top.v",
+      "sha256": "3512cb0546a0940e3de3dbb33c677f719a1138a797a1668524cb38d0d998df51"
+    },
+    "new_top": {
+      "file": "reports/camera_reference/new_top.v",
+      "sha256": "b555c796683928b5eeb6c335c4b2f5157c138bdf7b5a377a1260dcca19bf70f7"
+    },
+    "routed_facts": {
+      "file": "reports/camera_reference/routed_facts.tsv",
+      "sha256": "324b3f5624b75766ad84f6d09ce06a1fffee459dbfa36d93661e8c3ea7759f51"
+    },
+    "simulation": {
+      "file": "reports/camera_reference/simulation.log",
+      "sha256": "147e34299d46e9e9f1cf5ad11fb19223cc272bf4ef3343462790aace1ba533bd"
+    },
+    "compiled_inventory": {
+      "file": "reports/camera_reference/compiled_inventory.tsv",
+      "sha256": "aa16dc9ced738766cd0d5a317b6ef41951db37ed4558682fb943e547faa68e3f"
+    },
+    "routed_dual_paths": {
+      "file": "reports/camera_reference/routed_dual_paths.tsv",
+      "sha256": "7d8143d5345a021a4cf5b30658e76b720967b9eff4513df215bcba6a4ce6f3f1"
+    },
+    "routed_neural_absence": {
+      "file": "reports/camera_reference/routed_neural_absence.tsv",
+      "sha256": "956204d4a7dad9192053a553003b10917c49fa4611b09b0680d19d39b8ed1f73"
+    },
+    "routed_ui_paths": {
+      "file": "reports/camera_reference/routed_ui_paths.tsv",
+      "sha256": "f34b625e9c0610564111f5590aa3f62467183f0992ca1babc300dbdfaa0210be"
+    },
+    "hardware_review": {
+      "file": "reports/camera_reference/hardware_review.json",
+      "sha256": "ac52a58ae503790dfd0831f83ae5096c9790673c56762136a40c286857853843"
+    },
+    "timing": {
+      "file": "reports/camera_reference/timing.rpt",
+      "sha256": "6d0c3a67ed8eed840e51670917b09687b05212ff663b840737b146e568ed0a40"
+    },
+    "camera_paths": {
+      "file": "reports/camera_reference/camera_paths.tsv",
+      "sha256": "1f332d8413911b774c4f9aeb0bfde962199954715e06e919c6e4381ffd85a16e"
+    },
+    "cdc": {
+      "file": "reports/camera_reference/cdc.rpt",
+      "sha256": "becc2d1b63664a5a933c5239cd173dae7c6f6bc721d644caf6e96f2a8fd7da8f"
+    },
+    "cdc_unwaived": {
+      "file": "reports/camera_reference/cdc_unwaived.rpt",
+      "sha256": "32327b3983620e0ded13c3db6ea28efac7954d17c5d9d859e4aaa953f1077903"
+    }
+  },
+  "boundary": "Frozen source + actual routed camera/UI/dual-slot evidence; no new human camera acceptance and no neural PL execution"
+}
